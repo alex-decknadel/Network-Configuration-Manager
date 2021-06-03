@@ -1,0 +1,32 @@
+; J4813A Configuration Editor; Created on release #F.05.72
+
+hostname "Salem-01-2524" 
+snmp-server contact "Tim Ferrell" 
+snmp-server location "Salem" 
+time timezone -480 
+time daylight-time-rule None 
+cdp run 
+ip default-gateway 192.168.0.1 
+timesync sntp 
+sntp unicast 
+snmp-server community "public" Manager Unrestricted 
+snmp-server community "private" Manager Unrestricted 
+snmp-server enable traps authentication 
+vlan 1 
+   name "DEFAULT_VLAN" 
+   untagged 1-26 
+   ip address 192.168.0.251 255.255.255.0 
+   exit 
+fault-finder bad-driver sensitivity high 
+fault-finder bad-transceiver sensitivity high 
+fault-finder bad-cable sensitivity high 
+fault-finder too-long-cable sensitivity high 
+fault-finder over-bandwidth sensitivity high 
+fault-finder broadcast-storm sensitivity high 
+fault-finder loss-of-link sensitivity high 
+no stack auto-join 
+ip ssh
+no aaa port-access authenticator active
+spanning-tree
+password manager
+

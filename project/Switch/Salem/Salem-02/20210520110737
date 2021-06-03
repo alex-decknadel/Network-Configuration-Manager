@@ -1,0 +1,26 @@
+; J4903A Configuration Editor; Created on release #I.08.58
+
+hostname "Salem-02" 
+snmp-server contact "Tim Ferrell" 
+snmp-server location "Salem" 
+time timezone -420 
+time daylight-time-rule Continental-US-and-Canada 
+no telnet-server 
+interface 3 
+   name "Port3, set 5/17" 
+exit
+interface 4 
+   name "Port4, also set 5/17" 
+exit
+ip default-gateway 192.168.0.1 
+snmp-server community "public" Unrestricted 
+vlan 1 
+   name "DEFAULT_VLAN" 
+   untagged 1-24 
+   ip address 192.168.0.253 255.255.255.0 
+   exit 
+ip ssh
+ip ssh filetransfer
+ip ssh version 1-or-2
+password manager
+

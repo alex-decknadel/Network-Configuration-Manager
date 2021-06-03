@@ -1,0 +1,48 @@
+form input[type=submit] {
+    margin: 2em 25% 0 25%;
+    width: 50%;
+    padding: 1em 0;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: #FFF;
+    font-weight: bold;
+}
+
+form#loginform div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+form#loginform div label {
+    margin-right: 2em;
+    text-align: right;
+    flex: 0 1 10%;
+}
+
+form#loginform div input {
+    padding: .5em 1em;
+    flex: 0 1 30%;
+}
+
+form input[type=submit]:hover {
+    background-color: #DDD;
+}
+
+@media screen and (max-width: 992px) {
+   
+    form#loginform div {
+        display: block;
+        text-align: center;
+    }
+}
+
+footer.outerwrap div.innerwrap > div:last-child {
+    justify-content: flex-end;
+    margin-top: -4em;
+}
+
+footer.outerwrap div.innerwrap > div:first-child > div:last-child {
+    margin-top: -2em;
+}

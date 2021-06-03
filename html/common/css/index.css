@@ -1,0 +1,43 @@
+/* Styles for the main body of the page */
+main.innerwrap > article > section > div {
+	display: flex;
+	justify-content: space-between;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+
+main.innerwrap > article > section#worker > div {
+	justify-content: center;
+	flex-flow: column;
+}
+
+main.innerwrap article section div div {
+	display: flex;
+	flex-flow: column;
+}
+
+main.innerwrap article h1 {
+	margin: .5em 0;
+}
+
+main.innerwrap article section div a {
+	font-size: 1.5em;
+	margin: .5em;
+	padding: .5em;
+}
+
+main.innerwrap article section div h2 {
+	margin: .5em .5em 0 .5em;
+	padding: .5em;
+	font-size: 1.5em;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+main.innerwrap article section div a:hover {
+	background-color: #DDD;
+}
+
+main.innerwrap article section div#secondcol a, main.innerwrap article section div#secondcol h2 {
+	text-align: right;
+}

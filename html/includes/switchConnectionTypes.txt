@@ -1,0 +1,5 @@
+SCP
+TFTP
+SFTP
+FTP
+SSH

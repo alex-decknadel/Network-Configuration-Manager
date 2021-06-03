@@ -1,0 +1,637 @@
+/*** These rules apply across entire website ***/
+
+img, embed, object, video {
+	max-width: 100%;
+}
+
+.outerwrap {
+	width: 100%;
+	display: block;
+	clear: both;
+}
+
+.innerwrap {
+	width: 95%;
+    max-width: 1100px;
+	margin: 0 auto;
+	display: block;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+/*** Background Colors ***/
+
+body {
+        background-color: #D8E7DF;
+}
+
+header.outerwrap, footer.outerwrap {
+	background-color: #F9F8F6;
+}
+
+/*** Fonts ***/
+
+body {
+    font-size: 100%;
+}
+
+ h1 {
+ 	font-size: 2em;
+ 	margin: 0 auto;
+ 	text-align: center;
+    font-family: 'Roboto', 'Arial', 'Helvetica', sans-serif;
+ }
+
+ p {
+ 	font-size: 1.167em;
+ }
+
+ h2 {
+	margin: .5em .5em 0 0;
+	padding: .5em .5em .5em 0;
+	font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'Roboto', 'Arial', 'Helvetica', sans-serif;
+ }
+
+ a, p, label, input, th, td {
+    font-family: 'Open Sans', 'Times New Roman', sans-serif;
+ }
+
+ label {
+    font-weight: bold;
+ }
+
+/*** Body ***/
+
+header.outerwrap div.innerwrap {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 1em 3em 0 3em;
+}
+
+div.logo {
+    flex: 0 1 30%;
+}
+
+header.outerwrap div.innerwrap nav {
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+header.outerwrap div.innerwrap nav {
+	margin-top: 4em;
+}
+
+header.outerwrap div.innerwrap nav ul{
+    display: flex;
+    justify-content: flex-end;
+    flex: 0 1 auto;
+}
+
+header.outerwrap div.innerwrap nav ul li {
+    position: relative;
+    transition: .3s ease all;
+}
+
+header.outerwrap div.innerwrap nav ul li a {
+    display: block;
+    padding: .5em .5em;
+    font-size: 1.25em;
+}
+
+header.outerwrap div.innerwrap nav ul li:hover {
+    background-color: #EEE;
+}
+
+header.outerwrap div.innerwrap nav ul li ul li:hover, form input[type=submit]:hover, footer.outerwrap div.innerwrap div p a:hover {
+    background-color: #DDD;
+}
+
+nav ul#mobile {
+	display: none;
+	font-size: 1.5em;
+}
+
+nav ul#primary {
+	display: flex;
+	justify-content: center;
+}
+
+nav ul#primary li {
+	text-align: center;
+}
+
+nav ul#primary li ul.dropdown {
+	background-color: rgba(249, 248, 246, .9);
+	display: none;
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	left: 0;
+}
+
+nav ul#primary li:hover > ul.dropdown {
+    display: block;
+}
+
+main {
+	padding: 1em 0 2em 0;
+	border-top: 2px solid #000;
+	border-bottom: 2px solid #000;
+	background-color: #FFF;
+}
+
+main.innerwrap article section {
+	margin: 0 1em;
+}
+
+main.innerwrap article > p {
+	margin-top: 1em;
+	width: 100%;
+	text-align: center;
+}
+
+form {
+	border: 1px solid #000;
+	border-radius: .5em;
+	padding: 1em;
+	margin: .5em 0;
+}
+
+form.addform div {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+form.addform div div {
+	align-items: center;
+}
+
+form.addform div label {
+	margin-right: 1em;
+}
+
+form input[type=submit] {
+	padding: .5em 1em;
+	border-radius: 5px;
+	background-color: #FFF;
+	font-weight: bold;
+}
+
+form.addform input[type=submit] {
+	width: 50%;
+	margin: 2em 25% 0 25%;
+}
+
+form.submitform {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border: 1px solid #000;
+	border-radius: .5em;
+	padding: 1em;
+	margin: 1em;
+}
+
+form.submitform div select {
+    margin-left: 1em;
+    width: 20em;
+}
+
+form.submitform input[type=submit] {
+    flex: 0 1 20%;
+}
+
+form input[type=text],form input[type=password], form select {
+    padding: .5em;
+}
+
+input, select {
+    border: 1px solid #000;
+}
+
+select {
+    text-align: center;
+}
+
+div.table {
+    margin: 0 auto;
+    width: 100%;
+    border: 1px solid #000;
+}
+
+form#assign div div, div.table div,footer.outerwrap div.innerwrap > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.tableheader {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+div.table div p {
+    text-align: center;
+}
+
+div.table div:not(.tableheader) p.tfirstcol {
+    border-right: 1px solid #000;
+}
+
+.tmidcol, .tfirstcol, .tlastcol {
+    padding: .5em 0;
+    flex: 0 1 33%;
+}
+
+div.table div:not(.tableheader) p.tlastcol {
+    padding: .5em 0;
+    border-left: 1px solid #000;
+}
+
+div.table div {
+    border-bottom: 1px solid #000;
+}
+
+.tableheader, div.table div:last-child {
+    border-bottom: none;
+}
+
+.noReturn {
+    flex: 0 1 100%;
+    padding: .5em;
+}
+
+/*** Specific Pages ***/
+
+form#addAdmins > div > div, form#addSwitch > div {
+    margin-top: 1em;
+}
+
+form#goback {
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+
+form#goback input[type=submit] {
+    flex: 0 1 70%;
+}
+
+/*** siteAdmins.php ***/
+
+form#addAdmins div div.adminDiv {
+    flex-flow: column;
+}
+
+form#addAdmins div div.adminDiv div {
+    margin-bottom: 1em;
+}
+
+div#adminTable div.siteAdmin {
+	background-color: #FFF;
+	border-bottom: none;
+}
+
+div#adminTable div.listSite {
+	background-color: #D8E7DF;
+	border-bottom: none;
+}
+
+div#adminTable div.listSite p, div#adminTable div.siteAdmin p, 
+div#adminTable form.actionForm {
+	flex: 0 1 25%;
+}
+
+div#adminTable div.listSite + div.siteAdmin {
+	border-top: 1px solid #000;
+}
+
+/*** viewConfigs.php ***/
+
+div.table form.assignAuthoritative div.switches {
+    border-bottom: none;
+}
+
+div.table form.assignAuthoritative div.switches > p.tfirstcol,
+div.table form.assignAuthoritative div.configs p.tfirstcol {
+    border-right: none;
+    text-align: left;
+    padding-left: 3em;
+}
+
+div.table form.assignAuthoritative div.configs{
+    justify-content: flex-end;
+    border-bottom: none;
+    background-color: #D8E7DF;
+    padding-bottom: .5em;
+}
+
+div.table form.assignAuthoritative div.configs p {
+    padding: .5em;
+    flex: 0 1 33%;
+}
+
+div.table form.assignAuthoritative div.configs p.confDT {
+    flex: 1 1 33%;
+}
+
+div.table form.assignAuthoritative div.configs p.confDT span {
+    margin-right: .3em;
+}
+
+div.table form.assignAuthoritative div.listLabel {
+    border-bottom: none;
+    background-color: #D8E7DF;
+    padding-bottom: .5em;
+}
+
+div.table form.assignAuthoritative div.listLabel > p.tfirstcol {
+    border-right: none;
+}
+
+form.assignAuthoritative {
+    border-radius: 0;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+div.table div.configForms form.assignAuthoritative {
+    flex: 0 1 72%;
+}
+
+div.table div.configForms div.actionForms {
+    flex-flow: column;
+    justify-content: flex-start;
+    flex: 0 1 28%;
+    margin-top: 2.35em;
+}
+
+div.table div.configForms p.noReturn {
+    padding-right: 22.5%;
+    text-align: right;
+}
+
+div#configTable div.tableheader p.tlastcol {
+    flex: 0 1 28%;
+}
+
+div#configTable div.tableheader p.tfirstcol,
+div#configTable div.tableheader p.tmidcol {
+    flex: 0 1 24%;
+}
+
+div.table form.assignAuthoritative div.configs p.tfirstcol {
+    flex: 0 1 24%;
+    padding-right: 0;
+}
+
+/*** comparisons.php ***/
+
+div#compareConfigs {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 2em;
+}
+
+div#compareConfigs div.file {
+    flex: 0 1 50%;
+    padding: 0 1em 1em 1em;
+}
+
+div#compareConfigs div#confContent {
+    text-align: right;
+    border-left: 1px solid #000;
+}
+
+div#compareConfigs div.file p {
+    margin-bottom: .5em;
+    padding: .25em;
+}
+
+div#compareConfigs div.file p.fileName {
+    margin-bottom: 1em;
+    border-bottom: 1px solid #000;
+    padding: 1.5em .5em .5em .5em;
+}
+
+div#compareConfigs div.file p.change {
+    background-color: #F4E687;
+}
+
+div#compareConfigs div.file p.inserted {
+    background-color: #A3D2A3;
+}
+
+div#compareConfigs div.file p.deleted {
+    background-color: #D299A4;
+}
+
+div#compareConfigs div.file h2 {
+    padding-bottom: 0.1em;
+    border-bottom: 1px solid #000;
+}
+
+/*** viewSwitches.php ***/
+
+form.addform div.switchDiv {
+    padding: 0 10% 1em 10%;
+    justify-content: space-between;
+    border-bottom: 1px solid #000;
+}
+
+form.addform > div.switchDiv > div, form#addAdmins div div.adminDiv {
+    flex: 0 1 45%;
+}
+
+form.addform > div.switchDiv > div.leftDiv, 
+form#addAdmins div div.leftDiv div {
+    justify-content: flex-end;
+}
+
+form.addform > div.switchDiv > div.rightDiv,
+form#addAdmins div div.rightDiv div {
+    justify-content: flex-start;
+}
+
+form#addAdmins div div.rightDiv {
+    align-items: flex-start;
+}
+
+form#addAdmins div div.leftDiv {
+    align-items: flex-end;
+}
+
+form#addAdmins > div > div > div > label {
+    flex: 0 1 24%;
+}
+
+form#addSwitch > div > div > label {
+    flex: 0 1 40%;
+}
+
+div.table div form.actionForm {
+    border: none;
+    border-left: 1px solid #000;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    padding: .25em 0 .5em 0; 
+}
+
+div.table div form.actionForm {
+    flex: 0 1 33%;
+}
+
+div.table div form.actionForm input[type=submit] {
+    margin: 0 .5em;
+}
+
+div.table div.actionForms form.actionForm {
+    background-color: #D8E7DF;
+}
+
+div#display {
+    border: 1px solid #000;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 2%;
+}
+
+/*** sites.php ***/
+
+div.table > div.site {
+    background-color: #FFF;
+    padding: .5em 0;
+    border-bottom: none;
+    align-items: center;
+}
+
+div.table > div.site > p {
+    flex: 0 1 33%;
+    text-align: center;
+}
+
+div.table > div.listAdmin {
+    background-color: #D8E7DF;
+    border: none;
+    justify-content: flex-end;
+}
+
+div.table > div.listAdmin > p.tlastcol {
+    border-left: none;
+}
+
+div.table > div.listAdmin + div.site {
+    border-top: 1px solid #000;
+}
+
+div.site form.siteRename {
+    border: none;
+    padding:  0;
+    flex: 0 1 33%;
+    text-align: center;
+}
+
+div.site form.siteRename input[type=text] {
+    margin-right: 1em;
+}
+
+/*** assignAdmins.php ***/
+
+form#assign {
+    padding: 1em;
+}
+
+form#assign > div {
+    border: 1px solid #000;
+}
+
+form#assign div.table div p.tmidcol select {
+    font-size: 1em;
+}
+
+form#assign > div > div:nth-child(odd) {
+    background-color: #D8E7DF;
+}
+
+form#assign div div p:not(.noReturn), form#assign div div div {
+    flex: 0 1 50%;
+}
+
+form#assign div div p, form#assign div div div {
+    margin: 1em;
+}
+
+form#assign div div.tableheader p {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+form#assign div div div.checkboxes {
+    flex-flow: column;
+}
+
+form#assign div div div.checkboxes p {
+    display: flex;
+    justify-content: space-between;
+}
+
+form#assign div div div.checkboxes p label,
+form#assign div div div.checkboxes p input {
+    align-self: flex-end;
+}
+
+form#assign div div div.checkboxes p input {
+    transform: scale(1.25);
+}
+
+form#assign input[type=submit] {
+    margin: 2em 40% 0 40%;
+    width: 20%;
+    padding: 1em 0;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: #FFF;
+    font-weight: bold;
+}
+
+form#assign input[type=submit]:hover {
+    background-color: #DDD;
+}
+
+/*** Footer ***/
+
+footer.outerwrap div.innerwrap {
+    padding: 2em 0;
+}
+
+footer.outerwrap div.innerwrap > div {
+    margin-left: 2em;
+}
+
+footer.outerwrap div.innerwrap div p {
+    margin: 2em 0;
+}
+
+div#dateandtime > p:nth-child(1) {
+    margin-top: 0;
+}
+
+footer.outerwrap div.innerwrap div p a {
+    padding: .5em 2em;
+    border: 1px solid #000;
+    border-radius: .5em;
+    background-color: #FFF;
+}
+
+footer.outerwrap div.innerwrap div:first-child div:last-child {
+    margin-top: -2.5em;
+}

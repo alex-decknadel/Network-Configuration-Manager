@@ -1,0 +1,1 @@
+"C:\Program Files (x86)\WinSCP\winscp.com"  /log="h:\cfg\back.log" /ini=nul /script="h:\cfg\scpupload.txt"

@@ -1,0 +1,1342 @@
+. 2021-04-28 15:54:36.327 --------------------------------------------------------------------------
+. 2021-04-28 15:54:36.327 WinSCP Version 5.17.10 (Build 11087) (OS 10.0.19042 - Windows 10 Enterprise)
+. 2021-04-28 15:54:36.327 Configuration: nul
+. 2021-04-28 15:54:36.327 Log level: Normal
+. 2021-04-28 15:54:36.327 Local account: DESKTOP-G7B6GOJ\Gallowloch
+. 2021-04-28 15:54:36.327 Working directory: H:\cfg
+. 2021-04-28 15:54:36.327 Process ID: 568
+. 2021-04-28 15:54:36.327 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe" /console=5.17.10 /consoleinstance=_10960_85 "/log=h:\cfg\back.log" "/ini=nul" "/script=h:\cfg\scpupload.txt" 
+. 2021-04-28 15:54:36.327 Time zone: Current: GMT-7, Standard: GMT-8 (Pacific Standard Time), DST: GMT-7 (Pacific Daylight Time), DST Start: 3/14/2021, DST End: 11/7/2021
+. 2021-04-28 15:54:36.328 Login time: Wednesday, April 28, 2021 3:54:36 PM
+. 2021-04-28 15:54:36.328 --------------------------------------------------------------------------
+. 2021-04-28 15:54:36.328 Script: Retrospectively logging previous script records:
+> 2021-04-28 15:54:36.328 Script: open sftp://ubuntu@ec2-54-202-170-244.us-west-2.compute.amazonaws.com/ -hostkey="ssh-ed25519 255 vJkgnYHHk5haUYR1BJ9xpIQdNvGOETdwenDPNekNcv8=" -privatekey="E:\College\Classwork\IS475\NetCon.ppk" -rawsettings Cipher="aes,chacha20,3des,WARN,des,blowfish,arcfour"
+. 2021-04-28 15:54:36.328 --------------------------------------------------------------------------
+. 2021-04-28 15:54:36.328 Session name: ubuntu@ec2-54-202-170-244.us-west-2.compute.amazonaws.com (Ad-Hoc site)
+. 2021-04-28 15:54:36.328 Host name: ec2-54-202-170-244.us-west-2.compute.amazonaws.com (Port: 22)
+. 2021-04-28 15:54:36.328 User name: ubuntu (Password: No, Key file: Yes, Passphrase: No)
+. 2021-04-28 15:54:36.328 Tunnel: No
+. 2021-04-28 15:54:36.328 Transfer Protocol: SFTP
+. 2021-04-28 15:54:36.328 Ping type: Off, Ping interval: 30 sec; Timeout: 15 sec
+. 2021-04-28 15:54:36.328 Disable Nagle: No
+. 2021-04-28 15:54:36.328 Proxy: None
+. 2021-04-28 15:54:36.328 Send buffer: 262144
+. 2021-04-28 15:54:36.328 SSH protocol version: 2; Compression: No
+. 2021-04-28 15:54:36.328 Bypass authentication: No
+. 2021-04-28 15:54:36.328 Try agent: Yes; Agent forwarding: No; TIS/CryptoCard: No; KI: Yes; GSSAPI: Yes
+. 2021-04-28 15:54:36.328 GSSAPI: Forwarding: No; Libs: gssapi32,sspi,custom; Custom: 
+. 2021-04-28 15:54:36.328 Ciphers: aes,chacha20,3des,WARN,des,blowfish,arcfour; Ssh2DES: No
+. 2021-04-28 15:54:36.328 KEX: ecdh,dh-gex-sha1,dh-group14-sha1,rsa,WARN,dh-group1-sha1
+. 2021-04-28 15:54:36.328 SSH Bugs: Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto
+. 2021-04-28 15:54:36.328 Simple channel: Yes
+. 2021-04-28 15:54:36.328 Return code variable: Autodetect; Lookup user groups: Auto
+. 2021-04-28 15:54:36.328 Shell: default
+. 2021-04-28 15:54:36.328 EOL: LF, UTF: Auto
+. 2021-04-28 15:54:36.328 Clear aliases: Yes, Unset nat.vars: Yes, Resolve symlinks: Yes; Follow directory symlinks: No
+. 2021-04-28 15:54:36.328 LS: ls -la, Ign LS warn: Yes, Scp1 Comp: No; Exit code 1 is error: No
+. 2021-04-28 15:54:36.328 SFTP Bugs: Auto,Auto
+. 2021-04-28 15:54:36.328 SFTP Server: default
+. 2021-04-28 15:54:36.328 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2021-04-28 15:54:36.328 Cache directory changes: Yes, Permanent: Yes
+. 2021-04-28 15:54:36.328 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2021-04-28 15:54:36.328 DST mode: Unix
+. 2021-04-28 15:54:36.328 --------------------------------------------------------------------------
+. 2021-04-28 15:54:36.329 Looking up host "ec2-54-202-170-244.us-west-2.compute.amazonaws.com" for SSH connection
+. 2021-04-28 15:54:36.334 Connecting to 54.202.170.244 port 22
+. 2021-04-28 15:54:36.359 We claim version: SSH-2.0-WinSCP_release_5.17.10
+. 2021-04-28 15:54:36.410 Remote version: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.2
+. 2021-04-28 15:54:36.410 Using SSH protocol version 2
+. 2021-04-28 15:54:36.410 Have a known host key of type ssh-ed25519
+. 2021-04-28 15:54:36.438 Doing ECDH key exchange with curve Curve25519 and hash SHA-256
+. 2021-04-28 15:54:36.512 Server also has ecdsa-sha2-nistp256/ssh-rsa host keys, but we don't know any of them
+. 2021-04-28 15:54:36.512 Host key fingerprint is:
+. 2021-04-28 15:54:36.512 ssh-ed25519 255 68:89:c8:da:e8:88:c2:cd:ea:ba:c9:12:bf:ff:e1:4b vJkgnYHHk5haUYR1BJ9xpIQdNvGOETdwenDPNekNcv8=
+. 2021-04-28 15:54:36.512 Host key matches configured key fingerprint
+. 2021-04-28 15:54:36.512 Initialised AES-256 SDCTR (AES-NI accelerated) outbound encryption
+. 2021-04-28 15:54:36.512 Initialised HMAC-SHA-256 outbound MAC algorithm
+. 2021-04-28 15:54:36.512 Initialised AES-256 SDCTR (AES-NI accelerated) inbound encryption
+. 2021-04-28 15:54:36.512 Initialised HMAC-SHA-256 inbound MAC algorithm
+. 2021-04-28 15:54:36.534 Reading key file "E:\College\Classwork\IS475\NetCon.ppk"
+! 2021-04-28 15:54:36.534 Using username "ubuntu".
+. 2021-04-28 15:54:36.569 Server offered these authentication methods: publickey
+. 2021-04-28 15:54:36.569 Offered public key
+. 2021-04-28 15:54:36.593 Offer of public key accepted
+! 2021-04-28 15:54:36.593 Authenticating with public key "imported-openssh-key"
+. 2021-04-28 15:54:36.694 Sent public key signature
+. 2021-04-28 15:54:36.726 Access granted
+. 2021-04-28 15:54:36.726 Opening main session channel
+. 2021-04-28 15:54:37.149 Remote debug message: /home/ubuntu/.ssh/authorized_keys:1: key options: agent-forwarding port-forwarding pty user-rc x11-forwarding
+. 2021-04-28 15:54:37.217 Remote debug message: /home/ubuntu/.ssh/authorized_keys:1: key options: agent-forwarding port-forwarding pty user-rc x11-forwarding
+. 2021-04-28 15:54:37.217 Opened main channel
+. 2021-04-28 15:54:37.240 Started a shell/command
+. 2021-04-28 15:54:37.240 --------------------------------------------------------------------------
+. 2021-04-28 15:54:37.240 Using SFTP protocol.
+. 2021-04-28 15:54:37.240 Doing startup conversation with host.
+> 2021-04-28 15:54:37.242 Type: SSH_FXP_INIT, Size: 5, Number: -1
+< 2021-04-28 15:54:37.264 Type: SSH_FXP_VERSION, Size: 179, Number: -1
+. 2021-04-28 15:54:37.264 SFTP version 3 negotiated.
+. 2021-04-28 15:54:37.264 Unknown server extension posix-rename@openssh.com="1"
+. 2021-04-28 15:54:37.264 Supports statvfs@openssh.com extension version "2"
+. 2021-04-28 15:54:37.264 Unknown server extension fstatvfs@openssh.com="2"
+. 2021-04-28 15:54:37.264 Supports hardlink@openssh.com extension version "1"
+. 2021-04-28 15:54:37.264 Unknown server extension fsync@openssh.com="1"
+. 2021-04-28 15:54:37.264 Unknown server extension lsetstat@openssh.com="1"
+. 2021-04-28 15:54:37.264 We believe the server has signed timestamps bug
+. 2021-04-28 15:54:37.264 We will use UTF-8 strings until server sends an invalid UTF-8 string as with SFTP version 3 and older UTF-8 strings are not mandatory
+. 2021-04-28 15:54:37.264 Limiting packet size to OpenSSH sftp-server limit of 262148 bytes
+. 2021-04-28 15:54:37.264 Getting current directory name.
+. 2021-04-28 15:54:37.264 Getting real path for '.'
+> 2021-04-28 15:54:37.264 Type: SSH_FXP_REALPATH, Size: 10, Number: 16
+< 2021-04-28 15:54:37.287 Type: SSH_FXP_NAME, Size: 45, Number: 16
+. 2021-04-28 15:54:37.287 Real path is '/home/ubuntu'
+. 2021-04-28 15:54:37.287 Startup conversation with host finished.
+< 2021-04-28 15:54:37.287 Script: Active session: [1] ubuntu@ec2-54-202-170-244.us-west-2.compute.amazonaws.com
+> 2021-04-28 15:54:37.292 Script: synchronize remote h:\cfg\Switch /home/ubuntu/project/Switch/Woodburn
+< 2021-04-28 15:54:37.292 Script: Comparing...
+. 2021-04-28 15:54:37.293 Collecting synchronization list for local directory 'h:\cfg\Switch' and remote directory '/home/ubuntu/project/Switch/Woodburn', mode = Remote, params = 0x2 (NoConfirmation), file mask = ''
+. 2021-04-28 15:54:37.293 Local file 'h:\cfg\Switch\.' [2021-04-22T02:27:04.018Z] [0] excluded from synchronization
+. 2021-04-28 15:54:37.293 Local file 'h:\cfg\Switch\..' [2021-04-22T02:27:04.018Z] [0] excluded from synchronization
+. 2021-04-28 15:54:37.293 Local file 'h:\cfg\Switch\Woodburn-01' [2021-04-28T22:53:31.779Z] [0] included to synchronization
+. 2021-04-28 15:54:37.293 Listing directory "/home/ubuntu/project/Switch/Woodburn".
+> 2021-04-28 15:54:37.293 Type: SSH_FXP_OPENDIR, Size: 45, Number: 267
+< 2021-04-28 15:54:37.316 Type: SSH_FXP_HANDLE, Size: 13, Number: 267
+> 2021-04-28 15:54:37.316 Type: SSH_FXP_READDIR, Size: 13, Number: 524
+< 2021-04-28 15:54:37.341 Type: SSH_FXP_NAME, Size: 325, Number: 524
+> 2021-04-28 15:54:37.341 Type: SSH_FXP_READDIR, Size: 13, Number: 780
+< 2021-04-28 15:54:37.365 Type: SSH_FXP_STATUS, Size: 28, Number: 780
+< 2021-04-28 15:54:37.365 Status code: 1
+> 2021-04-28 15:54:37.365 Type: SSH_FXP_CLOSE, Size: 13, Number: 1028
+. 2021-04-28 15:54:37.365 ..;d;0;2021-04-22T02:51:24.000Z;3;"ubuntu" [1000];"ubuntu" [1000];rwxrwxr-x;0
+. 2021-04-28 15:54:37.365 Woodburn-01;d;0;2021-04-28T22:53:46.000Z;3;"ubuntu" [1000];"ubuntu" [1000];rwxrwxr-x;0
+. 2021-04-28 15:54:37.365 .;d;0;2021-04-22T02:52:30.000Z;3;"ubuntu" [1000];"ubuntu" [1000];rwxrwxr-x;0
+. 2021-04-28 15:54:37.382 Collecting synchronization list for local directory 'h:\cfg\Switch\Woodburn-01' and remote directory '/home/ubuntu/project/Switch/Woodburn/Woodburn-01', mode = Remote, params = 0x2 (NoConfirmation), file mask = ''
+. 2021-04-28 15:54:37.382 Local file 'h:\cfg\Switch\Woodburn-01\.' [2021-04-28T22:53:31.779Z] [0] excluded from synchronization
+. 2021-04-28 15:54:37.382 Local file 'h:\cfg\Switch\Woodburn-01\..' [2021-04-28T22:53:31.779Z] [0] excluded from synchronization
+. 2021-04-28 15:54:37.382 Local file 'h:\cfg\Switch\Woodburn-01\042121194821' [2021-04-22T02:48:22.944Z] [647] included to synchronization
+. 2021-04-28 15:54:37.382 Local file 'h:\cfg\Switch\Woodburn-01\042121195028' [2021-04-22T02:50:30.534Z] [643] included to synchronization
+. 2021-04-28 15:54:37.382 Local file 'h:\cfg\Switch\Woodburn-01\042121195223' [2021-04-22T02:52:25.635Z] [643] included to synchronization
+. 2021-04-28 15:54:37.382 Local file 'h:\cfg\Switch\Woodburn-01\20210428155226' [2021-04-28T22:52:28.719Z] [643] included to synchronization
+. 2021-04-28 15:54:37.382 Local file 'h:\cfg\Switch\Woodburn-01\running.txt' [2021-04-28T22:54:33.111Z] [643] included to synchronization
+. 2021-04-28 15:54:37.382 Listing directory "/home/ubuntu/project/Switch/Woodburn/Woodburn-01".
+> 2021-04-28 15:54:37.382 Type: SSH_FXP_OPENDIR, Size: 57, Number: 1291
+< 2021-04-28 15:54:37.408 Type: SSH_FXP_STATUS, Size: 24, Number: 1028
+. 2021-04-28 15:54:37.408 Discarding reserved response
+< 2021-04-28 15:54:37.408 Type: SSH_FXP_HANDLE, Size: 13, Number: 1291
+> 2021-04-28 15:54:37.408 Type: SSH_FXP_READDIR, Size: 13, Number: 1548
+< 2021-04-28 15:54:37.432 Type: SSH_FXP_NAME, Size: 691, Number: 1548
+> 2021-04-28 15:54:37.432 Type: SSH_FXP_READDIR, Size: 13, Number: 1804
+< 2021-04-28 15:54:37.454 Type: SSH_FXP_STATUS, Size: 28, Number: 1804
+< 2021-04-28 15:54:37.454 Status code: 1
+> 2021-04-28 15:54:37.454 Type: SSH_FXP_CLOSE, Size: 13, Number: 2052
+. 2021-04-28 15:54:37.454 ..;d;0;2021-04-22T02:52:30.000Z;3;"ubuntu" [1000];"ubuntu" [1000];rwxrwxr-x;0
+. 2021-04-28 15:54:37.454 042121194821;-;647;2021-04-22T02:48:22.000Z;3;"ubuntu" [1000];"ubuntu" [1000];rw-rw-r--;0
+. 2021-04-28 15:54:37.454 .;d;0;2021-04-28T22:53:46.000Z;3;"ubuntu" [1000];"ubuntu" [1000];rwxrwxr-x;0
+. 2021-04-28 15:54:37.454 042121195223;-;643;2021-04-22T02:52:25.000Z;3;"ubuntu" [1000];"ubuntu" [1000];rw-rw-r--;0
+. 2021-04-28 15:54:37.454 20210428155226;-;643;2021-04-28T22:52:28.000Z;3;"ubuntu" [1000];"ubuntu" [1000];rw-rw-r--;0
+. 2021-04-28 15:54:37.454 042121195028;-;643;2021-04-22T02:50:30.000Z;3;"ubuntu" [1000];"ubuntu" [1000];rw-rw-r--;0
+. 2021-04-28 15:54:37.456 Local file 'h:\cfg\Switch\Woodburn-01\running.txt' [2021-04-28T22:54:33.111Z] [643] is new
+< 2021-04-28 15:54:37.456 Script: Synchronizing...
+. 2021-04-28 15:54:37.456 Synchronizing local directory 'h:\cfg\Switch\Woodburn-01\' with remote directory '/home/ubuntu/project/Switch/Woodburn/Woodburn-01/', params = 0x2 (NoConfirmation)
+. 2021-04-28 15:54:37.456 Copying 1 files/directories to remote directory "/home/ubuntu/project/Switch/Woodburn/Woodburn-01/" - total size: 643
+. 2021-04-28 15:54:37.456   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: *.*
+. 2021-04-28 15:54:37.456   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2021-04-28 15:54:37.456   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2021-04-28 15:54:37.456 File: 'h:\cfg\Switch\Woodburn-01\running.txt' [2021-04-28T22:54:33.111Z] [643]
+< 2021-04-28 15:54:37.456 Script: Local 'h:\cfg\Switch\Woodburn-01' => Remote '/home/ubuntu/project/Switch/Woodburn/Woodburn-01'
+. 2021-04-28 15:54:37.459 Copying "h:\cfg\Switch\Woodburn-01\running.txt" to remote directory started.
+. 2021-04-28 15:54:37.459 Binary transfer mode selected.
+. 2021-04-28 15:54:37.459 Opening remote file.
+> 2021-04-28 15:54:37.459 Type: SSH_FXP_OPEN, Size: 85, Number: 2307
+< 2021-04-28 15:54:37.482 Type: SSH_FXP_STATUS, Size: 24, Number: 2052
+. 2021-04-28 15:54:37.482 Discarding reserved response
+< 2021-04-28 15:54:37.482 Type: SSH_FXP_HANDLE, Size: 13, Number: 2307
+> 2021-04-28 15:54:37.482 Type: SSH_FXP_WRITE, Size: 668, Number: 2822
+> 2021-04-28 15:54:37.483 Type: SSH_FXP_CLOSE, Size: 13, Number: 3076
+> 2021-04-28 15:54:37.483 Type: SSH_FXP_SETSTAT, Size: 81, Number: 2569
+< 2021-04-28 15:54:37.505 Type: SSH_FXP_STATUS, Size: 24, Number: 2822
+< 2021-04-28 15:54:37.505 Status code: 0
+< 2021-04-28 15:54:37.505 Type: SSH_FXP_STATUS, Size: 24, Number: 3076
+< 2021-04-28 15:54:37.505 Status code: 0
+. 2021-04-28 15:54:37.505 Preserving timestamp [2021-04-28T22:54:33.000Z]
+< 2021-04-28 15:54:37.528 Type: SSH_FXP_STATUS, Size: 24, Number: 2569
+< 2021-04-28 15:54:37.528 Status code: 0
+. 2021-04-28 15:54:37.528 Transfer done: 'h:\cfg\Switch\Woodburn-01\running.txt' => '/home/ubuntu/project/Switch/Woodburn/Woodburn-01/running.txt' [643]
+. 2021-04-28 15:54:37.528 Copying finished: Transferred: 643, Elapsed: 0:00:00, CPS: 0/s
+> 2021-04-28 15:54:37.528 Script: exit
+. 2021-04-28 15:54:37.528 Script: Exit code: 0
+. 2021-04-28 15:54:37.528 Closing connection.
+. 2021-04-28 15:54:37.528 Sending special code: 1
+. 2021-04-28 15:54:37.551 Session sent command exit status 0
+. 2021-04-28 15:54:37.551 Main session channel closed
+. 2021-04-28 15:54:37.551 All channels closed
+. 2021-04-28 16:01:20.292 --------------------------------------------------------------------------
+. 2021-04-28 16:01:20.292 WinSCP Version 5.17.10 (Build 11087) (OS 10.0.19042 - Windows 10 Enterprise)
+. 2021-04-28 16:01:20.293 Configuration: nul
+. 2021-04-28 16:01:20.293 Log level: Normal
+. 2021-04-28 16:01:20.293 Local account: DESKTOP-G7B6GOJ\Gallowloch
+. 2021-04-28 16:01:20.293 Working directory: H:\cfg
+. 2021-04-28 16:01:20.293 Process ID: 6788
+. 2021-04-28 16:01:20.293 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe" /console=5.17.10 /consoleinstance=_14128_840 "/log=h:\cfg\back.log" "/ini=nul" "/script=h:\cfg\scpupload.txt" 
+. 2021-04-28 16:01:20.293 Time zone: Current: GMT-7, Standard: GMT-8 (Pacific Standard Time), DST: GMT-7 (Pacific Daylight Time), DST Start: 3/14/2021, DST End: 11/7/2021
+. 2021-04-28 16:01:20.293 Login time: Wednesday, April 28, 2021 4:01:20 PM
+. 2021-04-28 16:01:20.293 --------------------------------------------------------------------------
+. 2021-04-28 16:01:20.293 Script: Retrospectively logging previous script records:
+> 2021-04-28 16:01:20.293 Script: open sftp://ubuntu@ec2-54-202-170-244.us-west-2.compute.amazonaws.com/ -hostkey="ssh-ed25519 255 vJkgnYHHk5haUYR1BJ9xpIQdNvGOETdwenDPNekNcv8=" -privatekey="E:\College\Classwork\IS475\NetCon.ppk" -rawsettings Cipher="aes,chacha20,3des,WARN,des,blowfish,arcfour"
+. 2021-04-28 16:01:20.293 --------------------------------------------------------------------------
+. 2021-04-28 16:01:20.293 Session name: ubuntu@ec2-54-202-170-244.us-west-2.compute.amazonaws.com (Ad-Hoc site)
+. 2021-04-28 16:01:20.293 Host name: ec2-54-202-170-244.us-west-2.compute.amazonaws.com (Port: 22)
+. 2021-04-28 16:01:20.293 User name: ubuntu (Password: No, Key file: Yes, Passphrase: No)
+. 2021-04-28 16:01:20.293 Tunnel: No
+. 2021-04-28 16:01:20.293 Transfer Protocol: SFTP
+. 2021-04-28 16:01:20.293 Ping type: Off, Ping interval: 30 sec; Timeout: 15 sec
+. 2021-04-28 16:01:20.293 Disable Nagle: No
+. 2021-04-28 16:01:20.293 Proxy: None
+. 2021-04-28 16:01:20.293 Send buffer: 262144
+. 2021-04-28 16:01:20.293 SSH protocol version: 2; Compression: No
+. 2021-04-28 16:01:20.293 Bypass authentication: No
+. 2021-04-28 16:01:20.293 Try agent: Yes; Agent forwarding: No; TIS/CryptoCard: No; KI: Yes; GSSAPI: Yes
+. 2021-04-28 16:01:20.293 GSSAPI: Forwarding: No; Libs: gssapi32,sspi,custom; Custom: 
+. 2021-04-28 16:01:20.293 Ciphers: aes,chacha20,3des,WARN,des,blowfish,arcfour; Ssh2DES: No
+. 2021-04-28 16:01:20.293 KEX: ecdh,dh-gex-sha1,dh-group14-sha1,rsa,WARN,dh-group1-sha1
+. 2021-04-28 16:01:20.293 SSH Bugs: Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto
+. 2021-04-28 16:01:20.293 Simple channel: Yes
+. 2021-04-28 16:01:20.293 Return code variable: Autodetect; Lookup user groups: Auto
+. 2021-04-28 16:01:20.293 Shell: default
+. 2021-04-28 16:01:20.293 EOL: LF, UTF: Auto
+. 2021-04-28 16:01:20.293 Clear aliases: Yes, Unset nat.vars: Yes, Resolve symlinks: Yes; Follow directory symlinks: No
+. 2021-04-28 16:01:20.293 LS: ls -la, Ign LS warn: Yes, Scp1 Comp: No; Exit code 1 is error: No
+. 2021-04-28 16:01:20.293 SFTP Bugs: Auto,Auto
+. 2021-04-28 16:01:20.293 SFTP Server: default
+. 2021-04-28 16:01:20.293 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2021-04-28 16:01:20.293 Cache directory changes: Yes, Permanent: Yes
+. 2021-04-28 16:01:20.293 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2021-04-28 16:01:20.293 DST mode: Unix
+. 2021-04-28 16:01:20.293 --------------------------------------------------------------------------
+. 2021-04-28 16:01:20.294 Looking up host "ec2-54-202-170-244.us-west-2.compute.amazonaws.com" for SSH connection
+. 2021-04-28 16:01:20.297 Connecting to 54.202.170.244 port 22
+. 2021-04-28 16:01:20.319 We claim version: SSH-2.0-WinSCP_release_5.17.10
+. 2021-04-28 16:01:20.350 Remote version: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.2
+. 2021-04-28 16:01:20.350 Using SSH protocol version 2
+. 2021-04-28 16:01:20.350 Have a known host key of type ssh-ed25519
+. 2021-04-28 16:01:20.374 Doing ECDH key exchange with curve Curve25519 and hash SHA-256
+. 2021-04-28 16:01:20.446 Server also has ecdsa-sha2-nistp256/ssh-rsa host keys, but we don't know any of them
+. 2021-04-28 16:01:20.446 Host key fingerprint is:
+. 2021-04-28 16:01:20.446 ssh-ed25519 255 68:89:c8:da:e8:88:c2:cd:ea:ba:c9:12:bf:ff:e1:4b vJkgnYHHk5haUYR1BJ9xpIQdNvGOETdwenDPNekNcv8=
+. 2021-04-28 16:01:20.447 Host key matches configured key fingerprint
+. 2021-04-28 16:01:20.447 Initialised AES-256 SDCTR (AES-NI accelerated) outbound encryption
+. 2021-04-28 16:01:20.447 Initialised HMAC-SHA-256 outbound MAC algorithm
+. 2021-04-28 16:01:20.447 Initialised AES-256 SDCTR (AES-NI accelerated) inbound encryption
+. 2021-04-28 16:01:20.447 Initialised HMAC-SHA-256 inbound MAC algorithm
+. 2021-04-28 16:01:20.467 Reading key file "E:\College\Classwork\IS475\NetCon.ppk"
+! 2021-04-28 16:01:20.467 Using username "ubuntu".
+. 2021-04-28 16:01:20.496 Server offered these authentication methods: publickey
+. 2021-04-28 16:01:20.496 Offered public key
+. 2021-04-28 16:01:20.517 Offer of public key accepted
+! 2021-04-28 16:01:20.517 Authenticating with public key "imported-openssh-key"
+. 2021-04-28 16:01:20.620 Sent public key signature
+. 2021-04-28 16:01:20.649 Access granted
+. 2021-04-28 16:01:20.649 Opening main session channel
+. 2021-04-28 16:01:21.065 Remote debug message: /home/ubuntu/.ssh/authorized_keys:1: key options: agent-forwarding port-forwarding pty user-rc x11-forwarding
+. 2021-04-28 16:01:21.127 Remote debug message: /home/ubuntu/.ssh/authorized_keys:1: key options: agent-forwarding port-forwarding pty user-rc x11-forwarding
+. 2021-04-28 16:01:21.127 Opened main channel
+. 2021-04-28 16:01:21.148 Started a shell/command
+. 2021-04-28 16:01:21.148 --------------------------------------------------------------------------
+. 2021-04-28 16:01:21.148 Using SFTP protocol.
+. 2021-04-28 16:01:21.148 Doing startup conversation with host.
+> 2021-04-28 16:01:21.149 Type: SSH_FXP_INIT, Size: 5, Number: -1
+< 2021-04-28 16:01:21.168 Type: SSH_FXP_VERSION, Size: 179, Number: -1
+. 2021-04-28 16:01:21.168 SFTP version 3 negotiated.
+. 2021-04-28 16:01:21.168 Unknown server extension posix-rename@openssh.com="1"
+. 2021-04-28 16:01:21.168 Supports statvfs@openssh.com extension version "2"
+. 2021-04-28 16:01:21.168 Unknown server extension fstatvfs@openssh.com="2"
+. 2021-04-28 16:01:21.168 Supports hardlink@openssh.com extension version "1"
+. 2021-04-28 16:01:21.168 Unknown server extension fsync@openssh.com="1"
+. 2021-04-28 16:01:21.168 Unknown server extension lsetstat@openssh.com="1"
+. 2021-04-28 16:01:21.168 We believe the server has signed timestamps bug
+. 2021-04-28 16:01:21.168 We will use UTF-8 strings until server sends an invalid UTF-8 string as with SFTP version 3 and older UTF-8 strings are not mandatory
+. 2021-04-28 16:01:21.168 Limiting packet size to OpenSSH sftp-server limit of 262148 bytes
+. 2021-04-28 16:01:21.168 Getting current directory name.
+. 2021-04-28 16:01:21.168 Getting real path for '.'
+> 2021-04-28 16:01:21.168 Type: SSH_FXP_REALPATH, Size: 10, Number: 16
+< 2021-04-28 16:01:21.187 Type: SSH_FXP_NAME, Size: 45, Number: 16
+. 2021-04-28 16:01:21.187 Real path is '/home/ubuntu'
+. 2021-04-28 16:01:21.187 Startup conversation with host finished.
+< 2021-04-28 16:01:21.187 Script: Active session: [1] ubuntu@ec2-54-202-170-244.us-west-2.compute.amazonaws.com
+> 2021-04-28 16:01:21.188 Script: synchronize remote h:\cfg\Switch /home/ubuntu/project/Switch/Woodburn
+< 2021-04-28 16:01:21.188 Script: Comparing...
+. 2021-04-28 16:01:21.188 Collecting synchronization list for local directory 'h:\cfg\Switch' and remote directory '/home/ubuntu/project/Switch/Woodburn', mode = Remote, params = 0x2 (NoConfirmation), file mask = ''
+. 2021-04-28 16:01:21.189 Local file 'h:\cfg\Switch\.' [2021-04-22T02:27:04.018Z] [0] excluded from synchronization
+. 2021-04-28 16:01:21.189 Local file 'h:\cfg\Switch\..' [2021-04-22T02:27:04.018Z] [0] excluded from synchronization
+. 2021-04-28 16:01:21.189 Local file 'h:\cfg\Switch\Woodburn-01' [2021-04-28T23:01:20.217Z] [0] included to synchronization
+. 2021-04-28 16:01:21.189 Listing directory "/home/ubuntu/project/Switch/Woodburn".
+> 2021-04-28 16:01:21.189 Type: SSH_FXP_OPENDIR, Size: 45, Number: 267
+< 2021-04-28 16:01:21.213 Type: SSH_FXP_HANDLE, Size: 13, Number: 267
+> 2021-04-28 16:01:21.213 Type: SSH_FXP_READDIR, Size: 13, Number: 524
+< 2021-04-28 16:01:21.231 Type: SSH_FXP_NAME, Size: 325, Number: 524
+> 2021-04-28 16:01:21.231 Type: SSH_FXP_READDIR, Size: 13, Number: 780
+< 2021-04-28 16:01:21.251 Type: SSH_FXP_STATUS, Size: 28, Number: 780
+< 2021-04-28 16:01:21.251 Status code: 1
+> 2021-04-28 16:01:21.251 Type: SSH_FXP_CLOSE, Size: 13, Number: 1028
+. 2021-04-28 16:01:21.251 ..;d;0;2021-04-22T02:51:24.000Z;3;"ubuntu" [1000];"ubuntu" [1000];rwxrwxr-x;0
+. 2021-04-28 16:01:21.251 Woodburn-01;d;0;2021-04-28T22:54:52.000Z;3;"ubuntu" [1000];"ubuntu" [1000];rwxrwxr-x;0
+. 2021-04-28 16:01:21.251 .;d;0;2021-04-22T02:52:30.000Z;3;"ubuntu" [1000];"ubuntu" [1000];rwxrwxr-x;0
+. 2021-04-28 16:01:21.268 Collecting synchronization list for local directory 'h:\cfg\Switch\Woodburn-01' and remote directory '/home/ubuntu/project/Switch/Woodburn/Woodburn-01', mode = Remote, params = 0x2 (NoConfirmation), file mask = ''
+. 2021-04-28 16:01:21.268 Local file 'h:\cfg\Switch\Woodburn-01\.' [2021-04-28T23:01:20.217Z] [0] excluded from synchronization
+. 2021-04-28 16:01:21.268 Local file 'h:\cfg\Switch\Woodburn-01\..' [2021-04-28T23:01:20.217Z] [0] excluded from synchronization
+. 2021-04-28 16:01:21.268 Local file 'h:\cfg\Switch\Woodburn-01\042121194821' [2021-04-22T02:48:22.944Z] [647] included to synchronization
+. 2021-04-28 16:01:21.268 Local file 'h:\cfg\Switch\Woodburn-01\042121195028' [2021-04-22T02:50:30.534Z] [643] included to synchronization
+. 2021-04-28 16:01:21.268 Local file 'h:\cfg\Switch\Woodburn-01\042121195223' [2021-04-22T02:52:25.635Z] [643] included to synchronization
+. 2021-04-28 16:01:21.268 Local file 'h:\cfg\Switch\Woodburn-01\1 T' [2021-04-28T23:01:17.131Z] [643] included to synchronization
+. 2021-04-28 16:01:21.268 Local file 'h:\cfg\Switch\Woodburn-01\20210428155226' [2021-04-28T22:52:28.719Z] [643] included to synchronization
+. 2021-04-28 16:01:21.268 Listing directory "/home/ubuntu/project/Switch/Woodburn/Woodburn-01".
+> 2021-04-28 16:01:21.268 Type: SSH_FXP_OPENDIR, Size: 57, Number: 1291
+< 2021-04-28 16:01:21.288 Type: SSH_FXP_STATUS, Size: 24, Number: 1028
+. 2021-04-28 16:01:21.288 Discarding reserved response
+< 2021-04-28 16:01:21.288 Type: SSH_FXP_HANDLE, Size: 13, Number: 1291
+> 2021-04-28 16:01:21.288 Type: SSH_FXP_READDIR, Size: 13, Number: 1548
+< 2021-04-28 16:01:21.308 Type: SSH_FXP_NAME, Size: 691, Number: 1548
+> 2021-04-28 16:01:21.308 Type: SSH_FXP_READDIR, Size: 13, Number: 1804
+< 2021-04-28 16:01:21.339 Type: SSH_FXP_STATUS, Size: 28, Number: 1804
+< 2021-04-28 16:01:21.339 Status code: 1
+> 2021-04-28 16:01:21.339 Type: SSH_FXP_CLOSE, Size: 13, Number: 2052
+. 2021-04-28 16:01:21.339 ..;d;0;2021-04-22T02:52:30.000Z;3;"ubuntu" [1000];"ubuntu" [1000];rwxrwxr-x;0
+. 2021-04-28 16:01:21.339 042121194821;-;647;2021-04-22T02:48:22.000Z;3;"ubuntu" [1000];"ubuntu" [1000];rw-rw-r--;0
+. 2021-04-28 16:01:21.339 .;d;0;2021-04-28T22:54:52.000Z;3;"ubuntu" [1000];"ubuntu" [1000];rwxrwxr-x;0
+. 2021-04-28 16:01:21.339 042121195223;-;643;2021-04-22T02:52:25.000Z;3;"ubuntu" [1000];"ubuntu" [1000];rw-rw-r--;0
+. 2021-04-28 16:01:21.339 20210428155226;-;643;2021-04-28T22:52:28.000Z;3;"ubuntu" [1000];"ubuntu" [1000];rw-rw-r--;0
+. 2021-04-28 16:01:21.339 042121195028;-;643;2021-04-22T02:50:30.000Z;3;"ubuntu" [1000];"ubuntu" [1000];rw-rw-r--;0
+. 2021-04-28 16:01:21.340 Local file 'h:\cfg\Switch\Woodburn-01\1 T' [2021-04-28T23:01:17.131Z] [643] is new
+< 2021-04-28 16:01:21.340 Script: Synchronizing...
+. 2021-04-28 16:01:21.341 Synchronizing local directory 'h:\cfg\Switch\Woodburn-01\' with remote directory '/home/ubuntu/project/Switch/Woodburn/Woodburn-01/', params = 0x2 (NoConfirmation)
+. 2021-04-28 16:01:21.341 Copying 1 files/directories to remote directory "/home/ubuntu/project/Switch/Woodburn/Woodburn-01/" - total size: 643
+. 2021-04-28 16:01:21.341   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: *.*
+. 2021-04-28 16:01:21.341   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2021-04-28 16:01:21.341   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2021-04-28 16:01:21.341 File: 'h:\cfg\Switch\Woodburn-01\1 T' [2021-04-28T23:01:17.131Z] [643]
+< 2021-04-28 16:01:21.341 Script: Local 'h:\cfg\Switch\Woodburn-01' => Remote '/home/ubuntu/project/Switch/Woodburn/Woodburn-01'
+. 2021-04-28 16:01:21.345 Copying "h:\cfg\Switch\Woodburn-01\1 T" to remote directory started.
+. 2021-04-28 16:01:21.345 Binary transfer mode selected.
+. 2021-04-28 16:01:21.345 Opening remote file.
+> 2021-04-28 16:01:21.345 Type: SSH_FXP_OPEN, Size: 77, Number: 2307
+< 2021-04-28 16:01:21.364 Type: SSH_FXP_STATUS, Size: 24, Number: 2052
+. 2021-04-28 16:01:21.364 Discarding reserved response
+< 2021-04-28 16:01:21.364 Type: SSH_FXP_HANDLE, Size: 13, Number: 2307
+> 2021-04-28 16:01:21.364 Type: SSH_FXP_WRITE, Size: 668, Number: 2822
+> 2021-04-28 16:01:21.364 Type: SSH_FXP_CLOSE, Size: 13, Number: 3076
+> 2021-04-28 16:01:21.364 Type: SSH_FXP_SETSTAT, Size: 73, Number: 2569
+< 2021-04-28 16:01:21.390 Type: SSH_FXP_STATUS, Size: 24, Number: 2822
+< 2021-04-28 16:01:21.390 Status code: 0
+< 2021-04-28 16:01:21.390 Type: SSH_FXP_STATUS, Size: 24, Number: 3076
+< 2021-04-28 16:01:21.390 Status code: 0
+. 2021-04-28 16:01:21.390 Preserving timestamp [2021-04-28T23:01:17.000Z]
+< 2021-04-28 16:01:21.409 Type: SSH_FXP_STATUS, Size: 24, Number: 2569
+< 2021-04-28 16:01:21.409 Status code: 0
+. 2021-04-28 16:01:21.409 Transfer done: 'h:\cfg\Switch\Woodburn-01\1 T' => '/home/ubuntu/project/Switch/Woodburn/Woodburn-01/1 T' [643]
+. 2021-04-28 16:01:21.409 Copying finished: Transferred: 643, Elapsed: 0:00:00, CPS: 0/s
+> 2021-04-28 16:01:21.410 Script: exit
+. 2021-04-28 16:01:21.410 Script: Exit code: 0
+. 2021-04-28 16:01:21.410 Closing connection.
+. 2021-04-28 16:01:21.410 Sending special code: 1
+. 2021-04-28 16:01:21.432 Session sent command exit status 0
+. 2021-04-28 16:01:21.432 Main session channel closed
+. 2021-04-28 16:01:21.432 All channels closed
+. 2021-04-28 16:03:17.287 --------------------------------------------------------------------------
+. 2021-04-28 16:03:17.288 WinSCP Version 5.17.10 (Build 11087) (OS 10.0.19042 - Windows 10 Enterprise)
+. 2021-04-28 16:03:17.288 Configuration: nul
+. 2021-04-28 16:03:17.288 Log level: Normal
+. 2021-04-28 16:03:17.288 Local account: DESKTOP-G7B6GOJ\Gallowloch
+. 2021-04-28 16:03:17.288 Working directory: H:\cfg
+. 2021-04-28 16:03:17.288 Process ID: 17240
+. 2021-04-28 16:03:17.288 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe" /console=5.17.10 /consoleinstance=_4004_357 "/log=h:\cfg\back.log" "/ini=nul" "/script=h:\cfg\scpupload.txt" 
+. 2021-04-28 16:03:17.288 Time zone: Current: GMT-7, Standard: GMT-8 (Pacific Standard Time), DST: GMT-7 (Pacific Daylight Time), DST Start: 3/14/2021, DST End: 11/7/2021
+. 2021-04-28 16:03:17.288 Login time: Wednesday, April 28, 2021 4:03:17 PM
+. 2021-04-28 16:03:17.288 --------------------------------------------------------------------------
+. 2021-04-28 16:03:17.288 Script: Retrospectively logging previous script records:
+> 2021-04-28 16:03:17.288 Script: open sftp://ubuntu@ec2-54-202-170-244.us-west-2.compute.amazonaws.com/ -hostkey="ssh-ed25519 255 vJkgnYHHk5haUYR1BJ9xpIQdNvGOETdwenDPNekNcv8=" -privatekey="E:\College\Classwork\IS475\NetCon.ppk" -rawsettings Cipher="aes,chacha20,3des,WARN,des,blowfish,arcfour"
+. 2021-04-28 16:03:17.288 --------------------------------------------------------------------------
+. 2021-04-28 16:03:17.288 Session name: ubuntu@ec2-54-202-170-244.us-west-2.compute.amazonaws.com (Ad-Hoc site)
+. 2021-04-28 16:03:17.288 Host name: ec2-54-202-170-244.us-west-2.compute.amazonaws.com (Port: 22)
+. 2021-04-28 16:03:17.288 User name: ubuntu (Password: No, Key file: Yes, Passphrase: No)
+. 2021-04-28 16:03:17.288 Tunnel: No
+. 2021-04-28 16:03:17.288 Transfer Protocol: SFTP
+. 2021-04-28 16:03:17.288 Ping type: Off, Ping interval: 30 sec; Timeout: 15 sec
+. 2021-04-28 16:03:17.288 Disable Nagle: No
+. 2021-04-28 16:03:17.288 Proxy: None
+. 2021-04-28 16:03:17.288 Send buffer: 262144
+. 2021-04-28 16:03:17.288 SSH protocol version: 2; Compression: No
+. 2021-04-28 16:03:17.288 Bypass authentication: No
+. 2021-04-28 16:03:17.288 Try agent: Yes; Agent forwarding: No; TIS/CryptoCard: No; KI: Yes; GSSAPI: Yes
+. 2021-04-28 16:03:17.288 GSSAPI: Forwarding: No; Libs: gssapi32,sspi,custom; Custom: 
+. 2021-04-28 16:03:17.288 Ciphers: aes,chacha20,3des,WARN,des,blowfish,arcfour; Ssh2DES: No
+. 2021-04-28 16:03:17.288 KEX: ecdh,dh-gex-sha1,dh-group14-sha1,rsa,WARN,dh-group1-sha1
+. 2021-04-28 16:03:17.288 SSH Bugs: Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto
+. 2021-04-28 16:03:17.288 Simple channel: Yes
+. 2021-04-28 16:03:17.288 Return code variable: Autodetect; Lookup user groups: Auto
+. 2021-04-28 16:03:17.288 Shell: default
+. 2021-04-28 16:03:17.288 EOL: LF, UTF: Auto
+. 2021-04-28 16:03:17.288 Clear aliases: Yes, Unset nat.vars: Yes, Resolve symlinks: Yes; Follow directory symlinks: No
+. 2021-04-28 16:03:17.288 LS: ls -la, Ign LS warn: Yes, Scp1 Comp: No; Exit code 1 is error: No
+. 2021-04-28 16:03:17.288 SFTP Bugs: Auto,Auto
+. 2021-04-28 16:03:17.288 SFTP Server: default
+. 2021-04-28 16:03:17.288 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2021-04-28 16:03:17.288 Cache directory changes: Yes, Permanent: Yes
+. 2021-04-28 16:03:17.288 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2021-04-28 16:03:17.288 DST mode: Unix
+. 2021-04-28 16:03:17.288 --------------------------------------------------------------------------
+. 2021-04-28 16:03:17.289 Looking up host "ec2-54-202-170-244.us-west-2.compute.amazonaws.com" for SSH connection
+. 2021-04-28 16:03:17.293 Connecting to 54.202.170.244 port 22
+. 2021-04-28 16:03:17.318 We claim version: SSH-2.0-WinSCP_release_5.17.10
+. 2021-04-28 16:03:17.350 Remote version: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.2
+. 2021-04-28 16:03:17.350 Using SSH protocol version 2
+. 2021-04-28 16:03:17.350 Have a known host key of type ssh-ed25519
+. 2021-04-28 16:03:17.377 Doing ECDH key exchange with curve Curve25519 and hash SHA-256
+. 2021-04-28 16:03:17.451 Server also has ecdsa-sha2-nistp256/ssh-rsa host keys, but we don't know any of them
+. 2021-04-28 16:03:17.451 Host key fingerprint is:
+. 2021-04-28 16:03:17.451 ssh-ed25519 255 68:89:c8:da:e8:88:c2:cd:ea:ba:c9:12:bf:ff:e1:4b vJkgnYHHk5haUYR1BJ9xpIQdNvGOETdwenDPNekNcv8=
+. 2021-04-28 16:03:17.452 Host key matches configured key fingerprint
+. 2021-04-28 16:03:17.452 Initialised AES-256 SDCTR (AES-NI accelerated) outbound encryption
+. 2021-04-28 16:03:17.452 Initialised HMAC-SHA-256 outbound MAC algorithm
+. 2021-04-28 16:03:17.452 Initialised AES-256 SDCTR (AES-NI accelerated) inbound encryption
+. 2021-04-28 16:03:17.452 Initialised HMAC-SHA-256 inbound MAC algorithm
+. 2021-04-28 16:03:17.475 Reading key file "E:\College\Classwork\IS475\NetCon.ppk"
+! 2021-04-28 16:03:17.475 Using username "ubuntu".
+. 2021-04-28 16:03:17.510 Server offered these authentication methods: publickey
+. 2021-04-28 16:03:17.510 Offered public key
+. 2021-04-28 16:03:17.537 Offer of public key accepted
+! 2021-04-28 16:03:17.537 Authenticating with public key "imported-openssh-key"
+. 2021-04-28 16:03:17.640 Sent public key signature
+. 2021-04-28 16:03:17.671 Access granted
+. 2021-04-28 16:03:17.671 Opening main session channel
+. 2021-04-28 16:03:18.099 Remote debug message: /home/ubuntu/.ssh/authorized_keys:1: key options: agent-forwarding port-forwarding pty user-rc x11-forwarding
+. 2021-04-28 16:03:18.167 Remote debug message: /home/ubuntu/.ssh/authorized_keys:1: key options: agent-forwarding port-forwarding pty user-rc x11-forwarding
+. 2021-04-28 16:03:18.167 Opened main channel
+. 2021-04-28 16:03:18.191 Started a shell/command
+. 2021-04-28 16:03:18.191 --------------------------------------------------------------------------
+. 2021-04-28 16:03:18.191 Using SFTP protocol.
+. 2021-04-28 16:03:18.191 Doing startup conversation with host.
+> 2021-04-28 16:03:18.193 Type: SSH_FXP_INIT, Size: 5, Number: -1
+< 2021-04-28 16:03:18.213 Type: SSH_FXP_VERSION, Size: 179, Number: -1
+. 2021-04-28 16:03:18.213 SFTP version 3 negotiated.
+. 2021-04-28 16:03:18.213 Unknown server extension posix-rename@openssh.com="1"
+. 2021-04-28 16:03:18.213 Supports statvfs@openssh.com extension version "2"
+. 2021-04-28 16:03:18.213 Unknown server extension fstatvfs@openssh.com="2"
+. 2021-04-28 16:03:18.213 Supports hardlink@openssh.com extension version "1"
+. 2021-04-28 16:03:18.213 Unknown server extension fsync@openssh.com="1"
+. 2021-04-28 16:03:18.213 Unknown server extension lsetstat@openssh.com="1"
+. 2021-04-28 16:03:18.213 We believe the server has signed timestamps bug
+. 2021-04-28 16:03:18.213 We will use UTF-8 strings until server sends an invalid UTF-8 string as with SFTP version 3 and older UTF-8 strings are not mandatory
+. 2021-04-28 16:03:18.213 Limiting packet size to OpenSSH sftp-server limit of 262148 bytes
+. 2021-04-28 16:03:18.213 Getting current directory name.
+. 2021-04-28 16:03:18.213 Getting real path for '.'
+> 2021-04-28 16:03:18.213 Type: SSH_FXP_REALPATH, Size: 10, Number: 16
+< 2021-04-28 16:03:18.236 Type: SSH_FXP_NAME, Size: 45, Number: 16
+. 2021-04-28 16:03:18.236 Real path is '/home/ubuntu'
+. 2021-04-28 16:03:18.236 Startup conversation with host finished.
+< 2021-04-28 16:03:18.236 Script: Active session: [1] ubuntu@ec2-54-202-170-244.us-west-2.compute.amazonaws.com
+> 2021-04-28 16:03:18.239 Script: synchronize remote h:\cfg\Switch /home/ubuntu/project/Switch/Woodburn
+< 2021-04-28 16:03:18.239 Script: Comparing...
+. 2021-04-28 16:03:18.240 Collecting synchronization list for local directory 'h:\cfg\Switch' and remote directory '/home/ubuntu/project/Switch/Woodburn', mode = Remote, params = 0x2 (NoConfirmation), file mask = ''
+. 2021-04-28 16:03:18.240 Local file 'h:\cfg\Switch\.' [2021-04-22T02:27:04.018Z] [0] excluded from synchronization
+. 2021-04-28 16:03:18.240 Local file 'h:\cfg\Switch\..' [2021-04-22T02:27:04.018Z] [0] excluded from synchronization
+. 2021-04-28 16:03:18.240 Local file 'h:\cfg\Switch\Woodburn-01' [2021-04-28T23:01:41.232Z] [0] included to synchronization
+. 2021-04-28 16:03:18.240 Listing directory "/home/ubuntu/project/Switch/Woodburn".
+> 2021-04-28 16:03:18.240 Type: SSH_FXP_OPENDIR, Size: 45, Number: 267
+< 2021-04-28 16:03:18.264 Type: SSH_FXP_HANDLE, Size: 13, Number: 267
+> 2021-04-28 16:03:18.264 Type: SSH_FXP_READDIR, Size: 13, Number: 524
+< 2021-04-28 16:03:18.289 Type: SSH_FXP_NAME, Size: 325, Number: 524
+> 2021-04-28 16:03:18.289 Type: SSH_FXP_READDIR, Size: 13, Number: 780
+< 2021-04-28 16:03:18.311 Type: SSH_FXP_STATUS, Size: 28, Number: 780
+< 2021-04-28 16:03:18.311 Status code: 1
+> 2021-04-28 16:03:18.311 Type: SSH_FXP_CLOSE, Size: 13, Number: 1028
+. 2021-04-28 16:03:18.311 ..;d;0;2021-04-22T02:51:24.000Z;3;"ubuntu" [1000];"ubuntu" [1000];rwxrwxr-x;0
+. 2021-04-28 16:03:18.311 Woodburn-01;d;0;2021-04-28T23:01:35.000Z;3;"ubuntu" [1000];"ubuntu" [1000];rwxrwxr-x;0
+. 2021-04-28 16:03:18.311 .;d;0;2021-04-22T02:52:30.000Z;3;"ubuntu" [1000];"ubuntu" [1000];rwxrwxr-x;0
+. 2021-04-28 16:03:18.314 Collecting synchronization list for local directory 'h:\cfg\Switch\Woodburn-01' and remote directory '/home/ubuntu/project/Switch/Woodburn/Woodburn-01', mode = Remote, params = 0x2 (NoConfirmation), file mask = ''
+. 2021-04-28 16:03:18.314 Local file 'h:\cfg\Switch\Woodburn-01\.' [2021-04-28T23:03:14.618Z] [0] excluded from synchronization
+. 2021-04-28 16:03:18.314 Local file 'h:\cfg\Switch\Woodburn-01\..' [2021-04-28T23:03:14.618Z] [0] excluded from synchronization
+. 2021-04-28 16:03:18.314 Local file 'h:\cfg\Switch\Woodburn-01\042121194821' [2021-04-22T02:48:22.944Z] [647] included to synchronization
+. 2021-04-28 16:03:18.314 Local file 'h:\cfg\Switch\Woodburn-01\042121195028' [2021-04-22T02:50:30.534Z] [643] included to synchronization
+. 2021-04-28 16:03:18.314 Local file 'h:\cfg\Switch\Woodburn-01\042121195223' [2021-04-22T02:52:25.635Z] [643] included to synchronization
+. 2021-04-28 16:03:18.314 Local file 'h:\cfg\Switch\Woodburn-01\running.txt' [2021-04-28T23:03:14.802Z] [643] included to synchronization
+. 2021-04-28 16:03:18.314 Listing directory "/home/ubuntu/project/Switch/Woodburn/Woodburn-01".
+> 2021-04-28 16:03:18.314 Type: SSH_FXP_OPENDIR, Size: 57, Number: 1291
+< 2021-04-28 16:03:18.345 Type: SSH_FXP_STATUS, Size: 24, Number: 1028
+. 2021-04-28 16:03:18.345 Discarding reserved response
+< 2021-04-28 16:03:18.345 Type: SSH_FXP_HANDLE, Size: 13, Number: 1291
+> 2021-04-28 16:03:18.345 Type: SSH_FXP_READDIR, Size: 13, Number: 1548
+< 2021-04-28 16:03:18.361 Type: SSH_FXP_NAME, Size: 567, Number: 1548
+> 2021-04-28 16:03:18.361 Type: SSH_FXP_READDIR, Size: 13, Number: 1804
+< 2021-04-28 16:03:18.395 Type: SSH_FXP_STATUS, Size: 28, Number: 1804
+< 2021-04-28 16:03:18.395 Status code: 1
+> 2021-04-28 16:03:18.395 Type: SSH_FXP_CLOSE, Size: 13, Number: 2052
+. 2021-04-28 16:03:18.395 ..;d;0;2021-04-22T02:52:30.000Z;3;"ubuntu" [1000];"ubuntu" [1000];rwxrwxr-x;0
+. 2021-04-28 16:03:18.395 042121194821;-;647;2021-04-22T02:48:22.000Z;3;"ubuntu" [1000];"ubuntu" [1000];rw-rw-r--;0
+. 2021-04-28 16:03:18.395 .;d;0;2021-04-28T23:01:35.000Z;3;"ubuntu" [1000];"ubuntu" [1000];rwxrwxr-x;0
+. 2021-04-28 16:03:18.395 042121195223;-;643;2021-04-22T02:52:25.000Z;3;"ubuntu" [1000];"ubuntu" [1000];rw-rw-r--;0
+. 2021-04-28 16:03:18.395 042121195028;-;643;2021-04-22T02:50:30.000Z;3;"ubuntu" [1000];"ubuntu" [1000];rw-rw-r--;0
+. 2021-04-28 16:03:18.395 Local file 'h:\cfg\Switch\Woodburn-01\running.txt' [2021-04-28T23:03:14.802Z] [643] is new
+< 2021-04-28 16:03:18.395 Script: Synchronizing...
+. 2021-04-28 16:03:18.395 Synchronizing local directory 'h:\cfg\Switch\Woodburn-01\' with remote directory '/home/ubuntu/project/Switch/Woodburn/Woodburn-01/', params = 0x2 (NoConfirmation)
+. 2021-04-28 16:03:18.395 Copying 1 files/directories to remote directory "/home/ubuntu/project/Switch/Woodburn/Woodburn-01/" - total size: 643
+. 2021-04-28 16:03:18.395   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: *.*
+. 2021-04-28 16:03:18.395   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2021-04-28 16:03:18.395   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2021-04-28 16:03:18.395 File: 'h:\cfg\Switch\Woodburn-01\running.txt' [2021-04-28T23:03:14.802Z] [643]
+< 2021-04-28 16:03:18.395 Script: Local 'h:\cfg\Switch\Woodburn-01' => Remote '/home/ubuntu/project/Switch/Woodburn/Woodburn-01'
+. 2021-04-28 16:03:18.395 Copying "h:\cfg\Switch\Woodburn-01\running.txt" to remote directory started.
+. 2021-04-28 16:03:18.395 Binary transfer mode selected.
+. 2021-04-28 16:03:18.395 Opening remote file.
+> 2021-04-28 16:03:18.395 Type: SSH_FXP_OPEN, Size: 85, Number: 2307
+< 2021-04-28 16:03:18.426 Type: SSH_FXP_STATUS, Size: 24, Number: 2052
+. 2021-04-28 16:03:18.426 Discarding reserved response
+< 2021-04-28 16:03:18.426 Type: SSH_FXP_HANDLE, Size: 13, Number: 2307
+> 2021-04-28 16:03:18.426 Type: SSH_FXP_WRITE, Size: 668, Number: 2822
+> 2021-04-28 16:03:18.426 Type: SSH_FXP_CLOSE, Size: 13, Number: 3076
+> 2021-04-28 16:03:18.426 Type: SSH_FXP_SETSTAT, Size: 81, Number: 2569
+< 2021-04-28 16:03:18.442 Type: SSH_FXP_STATUS, Size: 24, Number: 2822
+< 2021-04-28 16:03:18.442 Status code: 0
+< 2021-04-28 16:03:18.442 Type: SSH_FXP_STATUS, Size: 24, Number: 3076
+< 2021-04-28 16:03:18.442 Status code: 0
+. 2021-04-28 16:03:18.442 Preserving timestamp [2021-04-28T23:03:14.000Z]
+< 2021-04-28 16:03:18.473 Type: SSH_FXP_STATUS, Size: 24, Number: 2569
+< 2021-04-28 16:03:18.473 Status code: 0
+. 2021-04-28 16:03:18.473 Transfer done: 'h:\cfg\Switch\Woodburn-01\running.txt' => '/home/ubuntu/project/Switch/Woodburn/Woodburn-01/running.txt' [643]
+. 2021-04-28 16:03:18.473 Copying finished: Transferred: 643, Elapsed: 0:00:00, CPS: 0/s
+> 2021-04-28 16:03:18.473 Script: exit
+. 2021-04-28 16:03:18.473 Script: Exit code: 0
+. 2021-04-28 16:03:18.473 Closing connection.
+. 2021-04-28 16:03:18.473 Sending special code: 1
+. 2021-04-28 16:03:18.495 Session sent command exit status 0
+. 2021-04-28 16:03:18.495 Main session channel closed
+. 2021-04-28 16:03:18.495 All channels closed
+. 2021-04-28 16:09:58.292 --------------------------------------------------------------------------
+. 2021-04-28 16:09:58.293 WinSCP Version 5.17.10 (Build 11087) (OS 10.0.19042 - Windows 10 Enterprise)
+. 2021-04-28 16:09:58.293 Configuration: nul
+. 2021-04-28 16:09:58.293 Log level: Normal
+. 2021-04-28 16:09:58.293 Local account: DESKTOP-G7B6GOJ\Gallowloch
+. 2021-04-28 16:09:58.293 Working directory: H:\cfg
+. 2021-04-28 16:09:58.293 Process ID: 9844
+. 2021-04-28 16:09:58.293 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe" /console=5.17.10 /consoleinstance=_2900_329 "/log=h:\cfg\back.log" "/ini=nul" "/script=h:\cfg\scpupload.txt" 
+. 2021-04-28 16:09:58.293 Time zone: Current: GMT-7, Standard: GMT-8 (Pacific Standard Time), DST: GMT-7 (Pacific Daylight Time), DST Start: 3/14/2021, DST End: 11/7/2021
+. 2021-04-28 16:09:58.293 Login time: Wednesday, April 28, 2021 4:09:58 PM
+. 2021-04-28 16:09:58.293 --------------------------------------------------------------------------
+. 2021-04-28 16:09:58.293 Script: Retrospectively logging previous script records:
+> 2021-04-28 16:09:58.293 Script: open sftp://ubuntu@ec2-54-202-170-244.us-west-2.compute.amazonaws.com/ -hostkey="ssh-ed25519 255 vJkgnYHHk5haUYR1BJ9xpIQdNvGOETdwenDPNekNcv8=" -privatekey="E:\College\Classwork\IS475\NetCon.ppk" -rawsettings Cipher="aes,chacha20,3des,WARN,des,blowfish,arcfour"
+. 2021-04-28 16:09:58.293 --------------------------------------------------------------------------
+. 2021-04-28 16:09:58.293 Session name: ubuntu@ec2-54-202-170-244.us-west-2.compute.amazonaws.com (Ad-Hoc site)
+. 2021-04-28 16:09:58.293 Host name: ec2-54-202-170-244.us-west-2.compute.amazonaws.com (Port: 22)
+. 2021-04-28 16:09:58.293 User name: ubuntu (Password: No, Key file: Yes, Passphrase: No)
+. 2021-04-28 16:09:58.293 Tunnel: No
+. 2021-04-28 16:09:58.293 Transfer Protocol: SFTP
+. 2021-04-28 16:09:58.293 Ping type: Off, Ping interval: 30 sec; Timeout: 15 sec
+. 2021-04-28 16:09:58.293 Disable Nagle: No
+. 2021-04-28 16:09:58.293 Proxy: None
+. 2021-04-28 16:09:58.293 Send buffer: 262144
+. 2021-04-28 16:09:58.293 SSH protocol version: 2; Compression: No
+. 2021-04-28 16:09:58.293 Bypass authentication: No
+. 2021-04-28 16:09:58.293 Try agent: Yes; Agent forwarding: No; TIS/CryptoCard: No; KI: Yes; GSSAPI: Yes
+. 2021-04-28 16:09:58.293 GSSAPI: Forwarding: No; Libs: gssapi32,sspi,custom; Custom: 
+. 2021-04-28 16:09:58.293 Ciphers: aes,chacha20,3des,WARN,des,blowfish,arcfour; Ssh2DES: No
+. 2021-04-28 16:09:58.293 KEX: ecdh,dh-gex-sha1,dh-group14-sha1,rsa,WARN,dh-group1-sha1
+. 2021-04-28 16:09:58.293 SSH Bugs: Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto
+. 2021-04-28 16:09:58.293 Simple channel: Yes
+. 2021-04-28 16:09:58.293 Return code variable: Autodetect; Lookup user groups: Auto
+. 2021-04-28 16:09:58.293 Shell: default
+. 2021-04-28 16:09:58.293 EOL: LF, UTF: Auto
+. 2021-04-28 16:09:58.293 Clear aliases: Yes, Unset nat.vars: Yes, Resolve symlinks: Yes; Follow directory symlinks: No
+. 2021-04-28 16:09:58.293 LS: ls -la, Ign LS warn: Yes, Scp1 Comp: No; Exit code 1 is error: No
+. 2021-04-28 16:09:58.293 SFTP Bugs: Auto,Auto
+. 2021-04-28 16:09:58.293 SFTP Server: default
+. 2021-04-28 16:09:58.293 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2021-04-28 16:09:58.293 Cache directory changes: Yes, Permanent: Yes
+. 2021-04-28 16:09:58.293 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2021-04-28 16:09:58.293 DST mode: Unix
+. 2021-04-28 16:09:58.293 --------------------------------------------------------------------------
+. 2021-04-28 16:09:58.294 Looking up host "ec2-54-202-170-244.us-west-2.compute.amazonaws.com" for SSH connection
+. 2021-04-28 16:09:58.298 Connecting to 54.202.170.244 port 22
+. 2021-04-28 16:09:58.319 We claim version: SSH-2.0-WinSCP_release_5.17.10
+. 2021-04-28 16:09:58.350 Remote version: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.2
+. 2021-04-28 16:09:58.350 Using SSH protocol version 2
+. 2021-04-28 16:09:58.350 Have a known host key of type ssh-ed25519
+. 2021-04-28 16:09:58.370 Doing ECDH key exchange with curve Curve25519 and hash SHA-256
+. 2021-04-28 16:09:58.443 Server also has ecdsa-sha2-nistp256/ssh-rsa host keys, but we don't know any of them
+. 2021-04-28 16:09:58.443 Host key fingerprint is:
+. 2021-04-28 16:09:58.443 ssh-ed25519 255 68:89:c8:da:e8:88:c2:cd:ea:ba:c9:12:bf:ff:e1:4b vJkgnYHHk5haUYR1BJ9xpIQdNvGOETdwenDPNekNcv8=
+. 2021-04-28 16:09:58.443 Host key matches configured key fingerprint
+. 2021-04-28 16:09:58.443 Initialised AES-256 SDCTR (AES-NI accelerated) outbound encryption
+. 2021-04-28 16:09:58.443 Initialised HMAC-SHA-256 outbound MAC algorithm
+. 2021-04-28 16:09:58.443 Initialised AES-256 SDCTR (AES-NI accelerated) inbound encryption
+. 2021-04-28 16:09:58.443 Initialised HMAC-SHA-256 inbound MAC algorithm
+. 2021-04-28 16:09:58.464 Reading key file "E:\College\Classwork\IS475\NetCon.ppk"
+! 2021-04-28 16:09:58.464 Using username "ubuntu".
+. 2021-04-28 16:09:58.494 Server offered these authentication methods: publickey
+. 2021-04-28 16:09:58.494 Offered public key
+. 2021-04-28 16:09:58.518 Offer of public key accepted
+! 2021-04-28 16:09:58.518 Authenticating with public key "imported-openssh-key"
+. 2021-04-28 16:09:58.620 Sent public key signature
+. 2021-04-28 16:09:58.651 Access granted
+. 2021-04-28 16:09:58.651 Opening main session channel
+. 2021-04-28 16:09:59.074 Remote debug message: /home/ubuntu/.ssh/authorized_keys:1: key options: agent-forwarding port-forwarding pty user-rc x11-forwarding
+. 2021-04-28 16:09:59.140 Remote debug message: /home/ubuntu/.ssh/authorized_keys:1: key options: agent-forwarding port-forwarding pty user-rc x11-forwarding
+. 2021-04-28 16:09:59.140 Opened main channel
+. 2021-04-28 16:09:59.161 Started a shell/command
+. 2021-04-28 16:09:59.162 --------------------------------------------------------------------------
+. 2021-04-28 16:09:59.162 Using SFTP protocol.
+. 2021-04-28 16:09:59.162 Doing startup conversation with host.
+> 2021-04-28 16:09:59.163 Type: SSH_FXP_INIT, Size: 5, Number: -1
+< 2021-04-28 16:09:59.186 Type: SSH_FXP_VERSION, Size: 179, Number: -1
+. 2021-04-28 16:09:59.186 SFTP version 3 negotiated.
+. 2021-04-28 16:09:59.186 Unknown server extension posix-rename@openssh.com="1"
+. 2021-04-28 16:09:59.186 Supports statvfs@openssh.com extension version "2"
+. 2021-04-28 16:09:59.186 Unknown server extension fstatvfs@openssh.com="2"
+. 2021-04-28 16:09:59.186 Supports hardlink@openssh.com extension version "1"
+. 2021-04-28 16:09:59.186 Unknown server extension fsync@openssh.com="1"
+. 2021-04-28 16:09:59.186 Unknown server extension lsetstat@openssh.com="1"
+. 2021-04-28 16:09:59.186 We believe the server has signed timestamps bug
+. 2021-04-28 16:09:59.186 We will use UTF-8 strings until server sends an invalid UTF-8 string as with SFTP version 3 and older UTF-8 strings are not mandatory
+. 2021-04-28 16:09:59.186 Limiting packet size to OpenSSH sftp-server limit of 262148 bytes
+. 2021-04-28 16:09:59.186 Getting current directory name.
+. 2021-04-28 16:09:59.186 Getting real path for '.'
+> 2021-04-28 16:09:59.186 Type: SSH_FXP_REALPATH, Size: 10, Number: 16
+< 2021-04-28 16:09:59.206 Type: SSH_FXP_NAME, Size: 45, Number: 16
+. 2021-04-28 16:09:59.206 Real path is '/home/ubuntu'
+. 2021-04-28 16:09:59.206 Startup conversation with host finished.
+< 2021-04-28 16:09:59.206 Script: Active session: [1] ubuntu@ec2-54-202-170-244.us-west-2.compute.amazonaws.com
+> 2021-04-28 16:09:59.208 Script: synchronize remote h:\cfg\Switch /home/ubuntu/project/Switch/Woodburn
+< 2021-04-28 16:09:59.208 Script: Comparing...
+. 2021-04-28 16:09:59.208 Collecting synchronization list for local directory 'h:\cfg\Switch' and remote directory '/home/ubuntu/project/Switch/Woodburn', mode = Remote, params = 0x2 (NoConfirmation), file mask = ''
+. 2021-04-28 16:09:59.210 Local file 'h:\cfg\Switch\.' [2021-04-22T02:27:04.018Z] [0] excluded from synchronization
+. 2021-04-28 16:09:59.210 Local file 'h:\cfg\Switch\..' [2021-04-22T02:27:04.018Z] [0] excluded from synchronization
+. 2021-04-28 16:09:59.210 Local file 'h:\cfg\Switch\Woodburn-01' [2021-04-28T23:09:46.636Z] [0] included to synchronization
+. 2021-04-28 16:09:59.210 Listing directory "/home/ubuntu/project/Switch/Woodburn".
+> 2021-04-28 16:09:59.210 Type: SSH_FXP_OPENDIR, Size: 45, Number: 267
+< 2021-04-28 16:09:59.230 Type: SSH_FXP_HANDLE, Size: 13, Number: 267
+> 2021-04-28 16:09:59.230 Type: SSH_FXP_READDIR, Size: 13, Number: 524
+< 2021-04-28 16:09:59.251 Type: SSH_FXP_NAME, Size: 325, Number: 524
+> 2021-04-28 16:09:59.251 Type: SSH_FXP_READDIR, Size: 13, Number: 780
+< 2021-04-28 16:09:59.271 Type: SSH_FXP_STATUS, Size: 28, Number: 780
+< 2021-04-28 16:09:59.271 Status code: 1
+> 2021-04-28 16:09:59.271 Type: SSH_FXP_CLOSE, Size: 13, Number: 1028
+. 2021-04-28 16:09:59.271 ..;d;0;2021-04-22T02:51:24.000Z;3;"ubuntu" [1000];"ubuntu" [1000];rwxrwxr-x;0
+. 2021-04-28 16:09:59.271 Woodburn-01;d;0;2021-04-28T23:03:28.000Z;3;"ubuntu" [1000];"ubuntu" [1000];rwxrwxr-x;0
+. 2021-04-28 16:09:59.271 .;d;0;2021-04-22T02:52:30.000Z;3;"ubuntu" [1000];"ubuntu" [1000];rwxrwxr-x;0
+. 2021-04-28 16:09:59.287 Collecting synchronization list for local directory 'h:\cfg\Switch\Woodburn-01' and remote directory '/home/ubuntu/project/Switch/Woodburn/Woodburn-01', mode = Remote, params = 0x2 (NoConfirmation), file mask = ''
+. 2021-04-28 16:09:59.288 Local file 'h:\cfg\Switch\Woodburn-01\.' [2021-04-28T23:09:54.882Z] [0] excluded from synchronization
+. 2021-04-28 16:09:59.288 Local file 'h:\cfg\Switch\Woodburn-01\..' [2021-04-28T23:09:54.882Z] [0] excluded from synchronization
+. 2021-04-28 16:09:59.288 Local file 'h:\cfg\Switch\Woodburn-01\042121194821' [2021-04-22T02:48:22.944Z] [647] included to synchronization
+. 2021-04-28 16:09:59.288 Local file 'h:\cfg\Switch\Woodburn-01\042121195028' [2021-04-22T02:50:30.534Z] [643] included to synchronization
+. 2021-04-28 16:09:59.288 Local file 'h:\cfg\Switch\Woodburn-01\042121195223' [2021-04-22T02:52:25.635Z] [643] included to synchronization
+. 2021-04-28 16:09:59.288 Local file 'h:\cfg\Switch\Woodburn-01\running.txt' [2021-04-28T23:09:55.036Z] [643] included to synchronization
+. 2021-04-28 16:09:59.288 Listing directory "/home/ubuntu/project/Switch/Woodburn/Woodburn-01".
+> 2021-04-28 16:09:59.288 Type: SSH_FXP_OPENDIR, Size: 57, Number: 1291
+< 2021-04-28 16:09:59.310 Type: SSH_FXP_STATUS, Size: 24, Number: 1028
+. 2021-04-28 16:09:59.310 Discarding reserved response
+< 2021-04-28 16:09:59.310 Type: SSH_FXP_HANDLE, Size: 13, Number: 1291
+> 2021-04-28 16:09:59.310 Type: SSH_FXP_READDIR, Size: 13, Number: 1548
+< 2021-04-28 16:09:59.334 Type: SSH_FXP_NAME, Size: 567, Number: 1548
+> 2021-04-28 16:09:59.334 Type: SSH_FXP_READDIR, Size: 13, Number: 1804
+< 2021-04-28 16:09:59.356 Type: SSH_FXP_STATUS, Size: 28, Number: 1804
+< 2021-04-28 16:09:59.356 Status code: 1
+> 2021-04-28 16:09:59.356 Type: SSH_FXP_CLOSE, Size: 13, Number: 2052
+. 2021-04-28 16:09:59.356 ..;d;0;2021-04-22T02:52:30.000Z;3;"ubuntu" [1000];"ubuntu" [1000];rwxrwxr-x;0
+. 2021-04-28 16:09:59.356 042121194821;-;647;2021-04-22T02:48:22.000Z;3;"ubuntu" [1000];"ubuntu" [1000];rw-rw-r--;0
+. 2021-04-28 16:09:59.356 .;d;0;2021-04-28T23:03:28.000Z;3;"ubuntu" [1000];"ubuntu" [1000];rwxrwxr-x;0
+. 2021-04-28 16:09:59.356 042121195223;-;643;2021-04-22T02:52:25.000Z;3;"ubuntu" [1000];"ubuntu" [1000];rw-rw-r--;0
+. 2021-04-28 16:09:59.356 042121195028;-;643;2021-04-22T02:50:30.000Z;3;"ubuntu" [1000];"ubuntu" [1000];rw-rw-r--;0
+. 2021-04-28 16:09:59.357 Local file 'h:\cfg\Switch\Woodburn-01\running.txt' [2021-04-28T23:09:55.036Z] [643] is new
+< 2021-04-28 16:09:59.357 Script: Synchronizing...
+. 2021-04-28 16:09:59.358 Synchronizing local directory 'h:\cfg\Switch\Woodburn-01\' with remote directory '/home/ubuntu/project/Switch/Woodburn/Woodburn-01/', params = 0x2 (NoConfirmation)
+. 2021-04-28 16:09:59.358 Copying 1 files/directories to remote directory "/home/ubuntu/project/Switch/Woodburn/Woodburn-01/" - total size: 643
+. 2021-04-28 16:09:59.358   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: *.*
+. 2021-04-28 16:09:59.358   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2021-04-28 16:09:59.358   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2021-04-28 16:09:59.358 File: 'h:\cfg\Switch\Woodburn-01\running.txt' [2021-04-28T23:09:55.036Z] [643]
+< 2021-04-28 16:09:59.358 Script: Local 'h:\cfg\Switch\Woodburn-01' => Remote '/home/ubuntu/project/Switch/Woodburn/Woodburn-01'
+. 2021-04-28 16:09:59.361 Copying "h:\cfg\Switch\Woodburn-01\running.txt" to remote directory started.
+. 2021-04-28 16:09:59.361 Binary transfer mode selected.
+. 2021-04-28 16:09:59.361 Opening remote file.
+> 2021-04-28 16:09:59.361 Type: SSH_FXP_OPEN, Size: 85, Number: 2307
+< 2021-04-28 16:09:59.381 Type: SSH_FXP_STATUS, Size: 24, Number: 2052
+. 2021-04-28 16:09:59.381 Discarding reserved response
+< 2021-04-28 16:09:59.381 Type: SSH_FXP_HANDLE, Size: 13, Number: 2307
+> 2021-04-28 16:09:59.381 Type: SSH_FXP_WRITE, Size: 668, Number: 2822
+> 2021-04-28 16:09:59.381 Type: SSH_FXP_CLOSE, Size: 13, Number: 3076
+> 2021-04-28 16:09:59.381 Type: SSH_FXP_SETSTAT, Size: 81, Number: 2569
+< 2021-04-28 16:09:59.401 Type: SSH_FXP_STATUS, Size: 24, Number: 2822
+< 2021-04-28 16:09:59.401 Status code: 0
+< 2021-04-28 16:09:59.401 Type: SSH_FXP_STATUS, Size: 24, Number: 3076
+< 2021-04-28 16:09:59.401 Status code: 0
+. 2021-04-28 16:09:59.401 Preserving timestamp [2021-04-28T23:09:55.000Z]
+< 2021-04-28 16:09:59.421 Type: SSH_FXP_STATUS, Size: 24, Number: 2569
+< 2021-04-28 16:09:59.421 Status code: 0
+. 2021-04-28 16:09:59.421 Transfer done: 'h:\cfg\Switch\Woodburn-01\running.txt' => '/home/ubuntu/project/Switch/Woodburn/Woodburn-01/running.txt' [643]
+. 2021-04-28 16:09:59.421 Copying finished: Transferred: 643, Elapsed: 0:00:00, CPS: 0/s
+> 2021-04-28 16:09:59.421 Script: exit
+. 2021-04-28 16:09:59.421 Script: Exit code: 0
+. 2021-04-28 16:09:59.421 Closing connection.
+. 2021-04-28 16:09:59.421 Sending special code: 1
+. 2021-04-28 16:09:59.452 Session sent command exit status 0
+. 2021-04-28 16:09:59.452 Main session channel closed
+. 2021-04-28 16:09:59.452 All channels closed
+. 2021-04-28 16:15:11.278 --------------------------------------------------------------------------
+. 2021-04-28 16:15:11.279 WinSCP Version 5.17.10 (Build 11087) (OS 10.0.19042 - Windows 10 Enterprise)
+. 2021-04-28 16:15:11.279 Configuration: nul
+. 2021-04-28 16:15:11.279 Log level: Normal
+. 2021-04-28 16:15:11.279 Local account: DESKTOP-G7B6GOJ\Gallowloch
+. 2021-04-28 16:15:11.279 Working directory: H:\cfg
+. 2021-04-28 16:15:11.279 Process ID: 6132
+. 2021-04-28 16:15:11.279 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe" /console=5.17.10 /consoleinstance=_12620_682 "/log=h:\cfg\back.log" "/ini=nul" "/script=h:\cfg\scpupload.txt" 
+. 2021-04-28 16:15:11.279 Time zone: Current: GMT-7, Standard: GMT-8 (Pacific Standard Time), DST: GMT-7 (Pacific Daylight Time), DST Start: 3/14/2021, DST End: 11/7/2021
+. 2021-04-28 16:15:11.279 Login time: Wednesday, April 28, 2021 4:15:11 PM
+. 2021-04-28 16:15:11.279 --------------------------------------------------------------------------
+. 2021-04-28 16:15:11.279 Script: Retrospectively logging previous script records:
+> 2021-04-28 16:15:11.279 Script: open sftp://ubuntu@ec2-54-202-170-244.us-west-2.compute.amazonaws.com/ -hostkey="ssh-ed25519 255 vJkgnYHHk5haUYR1BJ9xpIQdNvGOETdwenDPNekNcv8=" -privatekey="E:\College\Classwork\IS475\NetCon.ppk" -rawsettings Cipher="aes,chacha20,3des,WARN,des,blowfish,arcfour"
+. 2021-04-28 16:15:11.279 --------------------------------------------------------------------------
+. 2021-04-28 16:15:11.279 Session name: ubuntu@ec2-54-202-170-244.us-west-2.compute.amazonaws.com (Ad-Hoc site)
+. 2021-04-28 16:15:11.279 Host name: ec2-54-202-170-244.us-west-2.compute.amazonaws.com (Port: 22)
+. 2021-04-28 16:15:11.279 User name: ubuntu (Password: No, Key file: Yes, Passphrase: No)
+. 2021-04-28 16:15:11.279 Tunnel: No
+. 2021-04-28 16:15:11.279 Transfer Protocol: SFTP
+. 2021-04-28 16:15:11.279 Ping type: Off, Ping interval: 30 sec; Timeout: 15 sec
+. 2021-04-28 16:15:11.279 Disable Nagle: No
+. 2021-04-28 16:15:11.279 Proxy: None
+. 2021-04-28 16:15:11.279 Send buffer: 262144
+. 2021-04-28 16:15:11.279 SSH protocol version: 2; Compression: No
+. 2021-04-28 16:15:11.279 Bypass authentication: No
+. 2021-04-28 16:15:11.279 Try agent: Yes; Agent forwarding: No; TIS/CryptoCard: No; KI: Yes; GSSAPI: Yes
+. 2021-04-28 16:15:11.279 GSSAPI: Forwarding: No; Libs: gssapi32,sspi,custom; Custom: 
+. 2021-04-28 16:15:11.279 Ciphers: aes,chacha20,3des,WARN,des,blowfish,arcfour; Ssh2DES: No
+. 2021-04-28 16:15:11.279 KEX: ecdh,dh-gex-sha1,dh-group14-sha1,rsa,WARN,dh-group1-sha1
+. 2021-04-28 16:15:11.279 SSH Bugs: Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto
+. 2021-04-28 16:15:11.279 Simple channel: Yes
+. 2021-04-28 16:15:11.279 Return code variable: Autodetect; Lookup user groups: Auto
+. 2021-04-28 16:15:11.279 Shell: default
+. 2021-04-28 16:15:11.279 EOL: LF, UTF: Auto
+. 2021-04-28 16:15:11.279 Clear aliases: Yes, Unset nat.vars: Yes, Resolve symlinks: Yes; Follow directory symlinks: No
+. 2021-04-28 16:15:11.279 LS: ls -la, Ign LS warn: Yes, Scp1 Comp: No; Exit code 1 is error: No
+. 2021-04-28 16:15:11.279 SFTP Bugs: Auto,Auto
+. 2021-04-28 16:15:11.279 SFTP Server: default
+. 2021-04-28 16:15:11.279 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2021-04-28 16:15:11.279 Cache directory changes: Yes, Permanent: Yes
+. 2021-04-28 16:15:11.279 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2021-04-28 16:15:11.279 DST mode: Unix
+. 2021-04-28 16:15:11.279 --------------------------------------------------------------------------
+. 2021-04-28 16:15:11.280 Looking up host "ec2-54-202-170-244.us-west-2.compute.amazonaws.com" for SSH connection
+. 2021-04-28 16:15:11.286 Connecting to 54.202.170.244 port 22
+. 2021-04-28 16:15:11.311 We claim version: SSH-2.0-WinSCP_release_5.17.10
+. 2021-04-28 16:15:11.344 Remote version: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.2
+. 2021-04-28 16:15:11.344 Using SSH protocol version 2
+. 2021-04-28 16:15:11.344 Have a known host key of type ssh-ed25519
+. 2021-04-28 16:15:11.369 Doing ECDH key exchange with curve Curve25519 and hash SHA-256
+. 2021-04-28 16:15:11.445 Server also has ecdsa-sha2-nistp256/ssh-rsa host keys, but we don't know any of them
+. 2021-04-28 16:15:11.445 Host key fingerprint is:
+. 2021-04-28 16:15:11.445 ssh-ed25519 255 68:89:c8:da:e8:88:c2:cd:ea:ba:c9:12:bf:ff:e1:4b vJkgnYHHk5haUYR1BJ9xpIQdNvGOETdwenDPNekNcv8=
+. 2021-04-28 16:15:11.445 Host key matches configured key fingerprint
+. 2021-04-28 16:15:11.445 Initialised AES-256 SDCTR (AES-NI accelerated) outbound encryption
+. 2021-04-28 16:15:11.445 Initialised HMAC-SHA-256 outbound MAC algorithm
+. 2021-04-28 16:15:11.445 Initialised AES-256 SDCTR (AES-NI accelerated) inbound encryption
+. 2021-04-28 16:15:11.445 Initialised HMAC-SHA-256 inbound MAC algorithm
+. 2021-04-28 16:15:11.467 Reading key file "E:\College\Classwork\IS475\NetCon.ppk"
+! 2021-04-28 16:15:11.467 Using username "ubuntu".
+. 2021-04-28 16:15:11.496 Server offered these authentication methods: publickey
+. 2021-04-28 16:15:11.496 Offered public key
+. 2021-04-28 16:15:11.526 Offer of public key accepted
+! 2021-04-28 16:15:11.526 Authenticating with public key "imported-openssh-key"
+. 2021-04-28 16:15:11.628 Sent public key signature
+. 2021-04-28 16:15:11.659 Access granted
+. 2021-04-28 16:15:11.659 Opening main session channel
+. 2021-04-28 16:15:12.085 Remote debug message: /home/ubuntu/.ssh/authorized_keys:1: key options: agent-forwarding port-forwarding pty user-rc x11-forwarding
+. 2021-04-28 16:15:12.163 Remote debug message: /home/ubuntu/.ssh/authorized_keys:1: key options: agent-forwarding port-forwarding pty user-rc x11-forwarding
+. 2021-04-28 16:15:12.163 Opened main channel
+. 2021-04-28 16:15:12.184 Started a shell/command
+. 2021-04-28 16:15:12.184 --------------------------------------------------------------------------
+. 2021-04-28 16:15:12.184 Using SFTP protocol.
+. 2021-04-28 16:15:12.184 Doing startup conversation with host.
+> 2021-04-28 16:15:12.184 Type: SSH_FXP_INIT, Size: 5, Number: -1
+< 2021-04-28 16:15:12.205 Type: SSH_FXP_VERSION, Size: 179, Number: -1
+. 2021-04-28 16:15:12.205 SFTP version 3 negotiated.
+. 2021-04-28 16:15:12.205 Unknown server extension posix-rename@openssh.com="1"
+. 2021-04-28 16:15:12.205 Supports statvfs@openssh.com extension version "2"
+. 2021-04-28 16:15:12.205 Unknown server extension fstatvfs@openssh.com="2"
+. 2021-04-28 16:15:12.205 Supports hardlink@openssh.com extension version "1"
+. 2021-04-28 16:15:12.205 Unknown server extension fsync@openssh.com="1"
+. 2021-04-28 16:15:12.205 Unknown server extension lsetstat@openssh.com="1"
+. 2021-04-28 16:15:12.205 We believe the server has signed timestamps bug
+. 2021-04-28 16:15:12.205 We will use UTF-8 strings until server sends an invalid UTF-8 string as with SFTP version 3 and older UTF-8 strings are not mandatory
+. 2021-04-28 16:15:12.205 Limiting packet size to OpenSSH sftp-server limit of 262148 bytes
+. 2021-04-28 16:15:12.205 Getting current directory name.
+. 2021-04-28 16:15:12.205 Getting real path for '.'
+> 2021-04-28 16:15:12.205 Type: SSH_FXP_REALPATH, Size: 10, Number: 16
+< 2021-04-28 16:15:12.225 Type: SSH_FXP_NAME, Size: 45, Number: 16
+. 2021-04-28 16:15:12.225 Real path is '/home/ubuntu'
+. 2021-04-28 16:15:12.225 Startup conversation with host finished.
+< 2021-04-28 16:15:12.226 Script: Active session: [1] ubuntu@ec2-54-202-170-244.us-west-2.compute.amazonaws.com
+> 2021-04-28 16:15:12.226 Script: synchronize remote h:\cfg\Switch /home/ubuntu/project/Switch/Woodburn
+< 2021-04-28 16:15:12.226 Script: Comparing...
+. 2021-04-28 16:15:12.226 Collecting synchronization list for local directory 'h:\cfg\Switch' and remote directory '/home/ubuntu/project/Switch/Woodburn', mode = Remote, params = 0x2 (NoConfirmation), file mask = ''
+. 2021-04-28 16:15:12.226 Local file 'h:\cfg\Switch\.' [2021-04-22T02:27:04.018Z] [0] excluded from synchronization
+. 2021-04-28 16:15:12.226 Local file 'h:\cfg\Switch\..' [2021-04-22T02:27:04.018Z] [0] excluded from synchronization
+. 2021-04-28 16:15:12.226 Local file 'h:\cfg\Switch\Woodburn-01' [2021-04-28T23:15:11.203Z] [0] included to synchronization
+. 2021-04-28 16:15:12.226 Listing directory "/home/ubuntu/project/Switch/Woodburn".
+> 2021-04-28 16:15:12.226 Type: SSH_FXP_OPENDIR, Size: 45, Number: 267
+< 2021-04-28 16:15:12.250 Type: SSH_FXP_HANDLE, Size: 13, Number: 267
+> 2021-04-28 16:15:12.250 Type: SSH_FXP_READDIR, Size: 13, Number: 524
+< 2021-04-28 16:15:12.272 Type: SSH_FXP_NAME, Size: 325, Number: 524
+> 2021-04-28 16:15:12.272 Type: SSH_FXP_READDIR, Size: 13, Number: 780
+< 2021-04-28 16:15:12.294 Type: SSH_FXP_STATUS, Size: 28, Number: 780
+< 2021-04-28 16:15:12.294 Status code: 1
+> 2021-04-28 16:15:12.294 Type: SSH_FXP_CLOSE, Size: 13, Number: 1028
+. 2021-04-28 16:15:12.294 ..;d;0;2021-04-22T02:51:24.000Z;3;"ubuntu" [1000];"ubuntu" [1000];rwxrwxr-x;0
+. 2021-04-28 16:15:12.294 Woodburn-01;d;0;2021-04-28T23:10:11.000Z;3;"ubuntu" [1000];"ubuntu" [1000];rwxrwxr-x;0
+. 2021-04-28 16:15:12.294 .;d;0;2021-04-22T02:52:30.000Z;3;"ubuntu" [1000];"ubuntu" [1000];rwxrwxr-x;0
+. 2021-04-28 16:15:12.311 Collecting synchronization list for local directory 'h:\cfg\Switch\Woodburn-01' and remote directory '/home/ubuntu/project/Switch/Woodburn/Woodburn-01', mode = Remote, params = 0x2 (NoConfirmation), file mask = ''
+. 2021-04-28 16:15:12.312 Local file 'h:\cfg\Switch\Woodburn-01\.' [2021-04-28T23:15:11.203Z] [0] excluded from synchronization
+. 2021-04-28 16:15:12.312 Local file 'h:\cfg\Switch\Woodburn-01\..' [2021-04-28T23:15:11.203Z] [0] excluded from synchronization
+. 2021-04-28 16:15:12.312 Local file 'h:\cfg\Switch\Woodburn-01\042121194821' [2021-04-22T02:48:22.944Z] [647] included to synchronization
+. 2021-04-28 16:15:12.312 Local file 'h:\cfg\Switch\Woodburn-01\042121195028' [2021-04-22T02:50:30.534Z] [643] included to synchronization
+. 2021-04-28 16:15:12.312 Local file 'h:\cfg\Switch\Woodburn-01\042121195223' [2021-04-22T02:52:25.635Z] [643] included to synchronization
+. 2021-04-28 16:15:12.312 Local file 'h:\cfg\Switch\Woodburn-01\042821160406' [2021-04-28T23:15:08.282Z] [643] included to synchronization
+. 2021-04-28 16:15:12.312 Listing directory "/home/ubuntu/project/Switch/Woodburn/Woodburn-01".
+> 2021-04-28 16:15:12.312 Type: SSH_FXP_OPENDIR, Size: 57, Number: 1291
+< 2021-04-28 16:15:12.333 Type: SSH_FXP_STATUS, Size: 24, Number: 1028
+. 2021-04-28 16:15:12.333 Discarding reserved response
+< 2021-04-28 16:15:12.333 Type: SSH_FXP_HANDLE, Size: 13, Number: 1291
+> 2021-04-28 16:15:12.333 Type: SSH_FXP_READDIR, Size: 13, Number: 1548
+< 2021-04-28 16:15:12.359 Type: SSH_FXP_NAME, Size: 567, Number: 1548
+> 2021-04-28 16:15:12.359 Type: SSH_FXP_READDIR, Size: 13, Number: 1804
+< 2021-04-28 16:15:12.381 Type: SSH_FXP_STATUS, Size: 28, Number: 1804
+< 2021-04-28 16:15:12.381 Status code: 1
+> 2021-04-28 16:15:12.381 Type: SSH_FXP_CLOSE, Size: 13, Number: 2052
+. 2021-04-28 16:15:12.381 ..;d;0;2021-04-22T02:52:30.000Z;3;"ubuntu" [1000];"ubuntu" [1000];rwxrwxr-x;0
+. 2021-04-28 16:15:12.381 042121194821;-;647;2021-04-22T02:48:22.000Z;3;"ubuntu" [1000];"ubuntu" [1000];rw-rw-r--;0
+. 2021-04-28 16:15:12.381 .;d;0;2021-04-28T23:10:11.000Z;3;"ubuntu" [1000];"ubuntu" [1000];rwxrwxr-x;0
+. 2021-04-28 16:15:12.381 042121195223;-;643;2021-04-22T02:52:25.000Z;3;"ubuntu" [1000];"ubuntu" [1000];rw-rw-r--;0
+. 2021-04-28 16:15:12.381 042121195028;-;643;2021-04-22T02:50:30.000Z;3;"ubuntu" [1000];"ubuntu" [1000];rw-rw-r--;0
+. 2021-04-28 16:15:12.383 Local file 'h:\cfg\Switch\Woodburn-01\042821160406' [2021-04-28T23:15:08.282Z] [643] is new
+< 2021-04-28 16:15:12.383 Script: Synchronizing...
+. 2021-04-28 16:15:12.383 Synchronizing local directory 'h:\cfg\Switch\Woodburn-01\' with remote directory '/home/ubuntu/project/Switch/Woodburn/Woodburn-01/', params = 0x2 (NoConfirmation)
+. 2021-04-28 16:15:12.383 Copying 1 files/directories to remote directory "/home/ubuntu/project/Switch/Woodburn/Woodburn-01/" - total size: 643
+. 2021-04-28 16:15:12.383   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: *.*
+. 2021-04-28 16:15:12.383   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2021-04-28 16:15:12.383   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2021-04-28 16:15:12.383 File: 'h:\cfg\Switch\Woodburn-01\042821160406' [2021-04-28T23:15:08.282Z] [643]
+< 2021-04-28 16:15:12.383 Script: Local 'h:\cfg\Switch\Woodburn-01' => Remote '/home/ubuntu/project/Switch/Woodburn/Woodburn-01'
+. 2021-04-28 16:15:12.385 Copying "h:\cfg\Switch\Woodburn-01\042821160406" to remote directory started.
+. 2021-04-28 16:15:12.385 Binary transfer mode selected.
+. 2021-04-28 16:15:12.385 Opening remote file.
+> 2021-04-28 16:15:12.385 Type: SSH_FXP_OPEN, Size: 86, Number: 2307
+< 2021-04-28 16:15:12.410 Type: SSH_FXP_STATUS, Size: 24, Number: 2052
+. 2021-04-28 16:15:12.410 Discarding reserved response
+< 2021-04-28 16:15:12.410 Type: SSH_FXP_HANDLE, Size: 13, Number: 2307
+> 2021-04-28 16:15:12.410 Type: SSH_FXP_WRITE, Size: 668, Number: 2822
+> 2021-04-28 16:15:12.410 Type: SSH_FXP_CLOSE, Size: 13, Number: 3076
+> 2021-04-28 16:15:12.410 Type: SSH_FXP_SETSTAT, Size: 82, Number: 2569
+< 2021-04-28 16:15:12.436 Type: SSH_FXP_STATUS, Size: 24, Number: 2822
+< 2021-04-28 16:15:12.436 Status code: 0
+< 2021-04-28 16:15:12.436 Type: SSH_FXP_STATUS, Size: 24, Number: 3076
+< 2021-04-28 16:15:12.436 Status code: 0
+. 2021-04-28 16:15:12.436 Preserving timestamp [2021-04-28T23:15:08.000Z]
+< 2021-04-28 16:15:12.458 Type: SSH_FXP_STATUS, Size: 24, Number: 2569
+< 2021-04-28 16:15:12.458 Status code: 0
+. 2021-04-28 16:15:12.458 Transfer done: 'h:\cfg\Switch\Woodburn-01\042821160406' => '/home/ubuntu/project/Switch/Woodburn/Woodburn-01/042821160406' [643]
+. 2021-04-28 16:15:12.458 Copying finished: Transferred: 643, Elapsed: 0:00:00, CPS: 0/s
+> 2021-04-28 16:15:12.458 Script: exit
+. 2021-04-28 16:15:12.459 Script: Exit code: 0
+. 2021-04-28 16:15:12.459 Closing connection.
+. 2021-04-28 16:15:12.459 Sending special code: 1
+. 2021-04-28 16:15:12.480 Session sent command exit status 0
+. 2021-04-28 16:15:12.480 Main session channel closed
+. 2021-04-28 16:15:12.480 All channels closed
+. 2021-04-28 16:18:07.262 --------------------------------------------------------------------------
+. 2021-04-28 16:18:07.262 WinSCP Version 5.17.10 (Build 11087) (OS 10.0.19042 - Windows 10 Enterprise)
+. 2021-04-28 16:18:07.263 Configuration: nul
+. 2021-04-28 16:18:07.263 Log level: Normal
+. 2021-04-28 16:18:07.263 Local account: DESKTOP-G7B6GOJ\Gallowloch
+. 2021-04-28 16:18:07.263 Working directory: H:\cfg
+. 2021-04-28 16:18:07.263 Process ID: 5368
+. 2021-04-28 16:18:07.263 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe" /console=5.17.10 /consoleinstance=_13128_444 "/log=h:\cfg\back.log" "/ini=nul" "/script=h:\cfg\scpupload.txt" 
+. 2021-04-28 16:18:07.263 Time zone: Current: GMT-7, Standard: GMT-8 (Pacific Standard Time), DST: GMT-7 (Pacific Daylight Time), DST Start: 3/14/2021, DST End: 11/7/2021
+. 2021-04-28 16:18:07.263 Login time: Wednesday, April 28, 2021 4:18:07 PM
+. 2021-04-28 16:18:07.263 --------------------------------------------------------------------------
+. 2021-04-28 16:18:07.263 Script: Retrospectively logging previous script records:
+> 2021-04-28 16:18:07.263 Script: open sftp://ubuntu@ec2-54-202-170-244.us-west-2.compute.amazonaws.com/ -hostkey="ssh-ed25519 255 vJkgnYHHk5haUYR1BJ9xpIQdNvGOETdwenDPNekNcv8=" -privatekey="E:\College\Classwork\IS475\NetCon.ppk" -rawsettings Cipher="aes,chacha20,3des,WARN,des,blowfish,arcfour"
+. 2021-04-28 16:18:07.263 --------------------------------------------------------------------------
+. 2021-04-28 16:18:07.263 Session name: ubuntu@ec2-54-202-170-244.us-west-2.compute.amazonaws.com (Ad-Hoc site)
+. 2021-04-28 16:18:07.263 Host name: ec2-54-202-170-244.us-west-2.compute.amazonaws.com (Port: 22)
+. 2021-04-28 16:18:07.263 User name: ubuntu (Password: No, Key file: Yes, Passphrase: No)
+. 2021-04-28 16:18:07.263 Tunnel: No
+. 2021-04-28 16:18:07.263 Transfer Protocol: SFTP
+. 2021-04-28 16:18:07.263 Ping type: Off, Ping interval: 30 sec; Timeout: 15 sec
+. 2021-04-28 16:18:07.263 Disable Nagle: No
+. 2021-04-28 16:18:07.263 Proxy: None
+. 2021-04-28 16:18:07.263 Send buffer: 262144
+. 2021-04-28 16:18:07.263 SSH protocol version: 2; Compression: No
+. 2021-04-28 16:18:07.263 Bypass authentication: No
+. 2021-04-28 16:18:07.263 Try agent: Yes; Agent forwarding: No; TIS/CryptoCard: No; KI: Yes; GSSAPI: Yes
+. 2021-04-28 16:18:07.263 GSSAPI: Forwarding: No; Libs: gssapi32,sspi,custom; Custom: 
+. 2021-04-28 16:18:07.263 Ciphers: aes,chacha20,3des,WARN,des,blowfish,arcfour; Ssh2DES: No
+. 2021-04-28 16:18:07.263 KEX: ecdh,dh-gex-sha1,dh-group14-sha1,rsa,WARN,dh-group1-sha1
+. 2021-04-28 16:18:07.263 SSH Bugs: Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto
+. 2021-04-28 16:18:07.263 Simple channel: Yes
+. 2021-04-28 16:18:07.263 Return code variable: Autodetect; Lookup user groups: Auto
+. 2021-04-28 16:18:07.263 Shell: default
+. 2021-04-28 16:18:07.263 EOL: LF, UTF: Auto
+. 2021-04-28 16:18:07.263 Clear aliases: Yes, Unset nat.vars: Yes, Resolve symlinks: Yes; Follow directory symlinks: No
+. 2021-04-28 16:18:07.263 LS: ls -la, Ign LS warn: Yes, Scp1 Comp: No; Exit code 1 is error: No
+. 2021-04-28 16:18:07.263 SFTP Bugs: Auto,Auto
+. 2021-04-28 16:18:07.263 SFTP Server: default
+. 2021-04-28 16:18:07.263 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2021-04-28 16:18:07.263 Cache directory changes: Yes, Permanent: Yes
+. 2021-04-28 16:18:07.263 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2021-04-28 16:18:07.263 DST mode: Unix
+. 2021-04-28 16:18:07.263 --------------------------------------------------------------------------
+. 2021-04-28 16:18:07.265 Looking up host "ec2-54-202-170-244.us-west-2.compute.amazonaws.com" for SSH connection
+. 2021-04-28 16:18:07.268 Connecting to 54.202.170.244 port 22
+. 2021-04-28 16:18:07.290 We claim version: SSH-2.0-WinSCP_release_5.17.10
+. 2021-04-28 16:18:07.320 Remote version: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.2
+. 2021-04-28 16:18:07.320 Using SSH protocol version 2
+. 2021-04-28 16:18:07.320 Have a known host key of type ssh-ed25519
+. 2021-04-28 16:18:07.343 Doing ECDH key exchange with curve Curve25519 and hash SHA-256
+. 2021-04-28 16:18:07.413 Server also has ecdsa-sha2-nistp256/ssh-rsa host keys, but we don't know any of them
+. 2021-04-28 16:18:07.413 Host key fingerprint is:
+. 2021-04-28 16:18:07.413 ssh-ed25519 255 68:89:c8:da:e8:88:c2:cd:ea:ba:c9:12:bf:ff:e1:4b vJkgnYHHk5haUYR1BJ9xpIQdNvGOETdwenDPNekNcv8=
+. 2021-04-28 16:18:07.414 Host key matches configured key fingerprint
+. 2021-04-28 16:18:07.414 Initialised AES-256 SDCTR (AES-NI accelerated) outbound encryption
+. 2021-04-28 16:18:07.414 Initialised HMAC-SHA-256 outbound MAC algorithm
+. 2021-04-28 16:18:07.414 Initialised AES-256 SDCTR (AES-NI accelerated) inbound encryption
+. 2021-04-28 16:18:07.414 Initialised HMAC-SHA-256 inbound MAC algorithm
+. 2021-04-28 16:18:07.433 Reading key file "E:\College\Classwork\IS475\NetCon.ppk"
+! 2021-04-28 16:18:07.433 Using username "ubuntu".
+. 2021-04-28 16:18:07.462 Server offered these authentication methods: publickey
+. 2021-04-28 16:18:07.462 Offered public key
+. 2021-04-28 16:18:07.482 Offer of public key accepted
+! 2021-04-28 16:18:07.482 Authenticating with public key "imported-openssh-key"
+. 2021-04-28 16:18:07.583 Sent public key signature
+. 2021-04-28 16:18:07.615 Access granted
+. 2021-04-28 16:18:07.615 Opening main session channel
+. 2021-04-28 16:18:08.039 Remote debug message: /home/ubuntu/.ssh/authorized_keys:1: key options: agent-forwarding port-forwarding pty user-rc x11-forwarding
+. 2021-04-28 16:18:08.097 Remote debug message: /home/ubuntu/.ssh/authorized_keys:1: key options: agent-forwarding port-forwarding pty user-rc x11-forwarding
+. 2021-04-28 16:18:08.097 Opened main channel
+. 2021-04-28 16:18:08.118 Started a shell/command
+. 2021-04-28 16:18:08.118 --------------------------------------------------------------------------
+. 2021-04-28 16:18:08.118 Using SFTP protocol.
+. 2021-04-28 16:18:08.118 Doing startup conversation with host.
+> 2021-04-28 16:18:08.118 Type: SSH_FXP_INIT, Size: 5, Number: -1
+< 2021-04-28 16:18:08.138 Type: SSH_FXP_VERSION, Size: 179, Number: -1
+. 2021-04-28 16:18:08.138 SFTP version 3 negotiated.
+. 2021-04-28 16:18:08.138 Unknown server extension posix-rename@openssh.com="1"
+. 2021-04-28 16:18:08.138 Supports statvfs@openssh.com extension version "2"
+. 2021-04-28 16:18:08.138 Unknown server extension fstatvfs@openssh.com="2"
+. 2021-04-28 16:18:08.138 Supports hardlink@openssh.com extension version "1"
+. 2021-04-28 16:18:08.138 Unknown server extension fsync@openssh.com="1"
+. 2021-04-28 16:18:08.138 Unknown server extension lsetstat@openssh.com="1"
+. 2021-04-28 16:18:08.138 We believe the server has signed timestamps bug
+. 2021-04-28 16:18:08.138 We will use UTF-8 strings until server sends an invalid UTF-8 string as with SFTP version 3 and older UTF-8 strings are not mandatory
+. 2021-04-28 16:18:08.138 Limiting packet size to OpenSSH sftp-server limit of 262148 bytes
+. 2021-04-28 16:18:08.138 Getting current directory name.
+. 2021-04-28 16:18:08.138 Getting real path for '.'
+> 2021-04-28 16:18:08.138 Type: SSH_FXP_REALPATH, Size: 10, Number: 16
+< 2021-04-28 16:18:08.157 Type: SSH_FXP_NAME, Size: 45, Number: 16
+. 2021-04-28 16:18:08.157 Real path is '/home/ubuntu'
+. 2021-04-28 16:18:08.157 Startup conversation with host finished.
+< 2021-04-28 16:18:08.157 Script: Active session: [1] ubuntu@ec2-54-202-170-244.us-west-2.compute.amazonaws.com
+> 2021-04-28 16:18:08.158 Script: synchronize remote h:\cfg\Switch /home/ubuntu/project/Switch/Woodburn
+< 2021-04-28 16:18:08.158 Script: Comparing...
+. 2021-04-28 16:18:08.158 Collecting synchronization list for local directory 'h:\cfg\Switch' and remote directory '/home/ubuntu/project/Switch/Woodburn', mode = Remote, params = 0x2 (NoConfirmation), file mask = ''
+. 2021-04-28 16:18:08.159 Local file 'h:\cfg\Switch\.' [2021-04-22T02:27:04.018Z] [0] excluded from synchronization
+. 2021-04-28 16:18:08.159 Local file 'h:\cfg\Switch\..' [2021-04-22T02:27:04.018Z] [0] excluded from synchronization
+. 2021-04-28 16:18:08.159 Local file 'h:\cfg\Switch\Woodburn-01' [2021-04-28T23:18:07.189Z] [0] included to synchronization
+. 2021-04-28 16:18:08.159 Listing directory "/home/ubuntu/project/Switch/Woodburn".
+> 2021-04-28 16:18:08.159 Type: SSH_FXP_OPENDIR, Size: 45, Number: 267
+< 2021-04-28 16:18:08.178 Type: SSH_FXP_HANDLE, Size: 13, Number: 267
+> 2021-04-28 16:18:08.178 Type: SSH_FXP_READDIR, Size: 13, Number: 524
+< 2021-04-28 16:18:08.199 Type: SSH_FXP_NAME, Size: 325, Number: 524
+> 2021-04-28 16:18:08.199 Type: SSH_FXP_READDIR, Size: 13, Number: 780
+< 2021-04-28 16:18:08.218 Type: SSH_FXP_STATUS, Size: 28, Number: 780
+< 2021-04-28 16:18:08.218 Status code: 1
+> 2021-04-28 16:18:08.218 Type: SSH_FXP_CLOSE, Size: 13, Number: 1028
+. 2021-04-28 16:18:08.218 ..;d;0;2021-04-22T02:51:24.000Z;3;"ubuntu" [1000];"ubuntu" [1000];rwxrwxr-x;0
+. 2021-04-28 16:18:08.218 Woodburn-01;d;0;2021-04-28T23:17:47.000Z;3;"ubuntu" [1000];"ubuntu" [1000];rwxrwxr-x;0
+. 2021-04-28 16:18:08.218 .;d;0;2021-04-22T02:52:30.000Z;3;"ubuntu" [1000];"ubuntu" [1000];rwxrwxr-x;0
+. 2021-04-28 16:18:08.234 Collecting synchronization list for local directory 'h:\cfg\Switch\Woodburn-01' and remote directory '/home/ubuntu/project/Switch/Woodburn/Woodburn-01', mode = Remote, params = 0x2 (NoConfirmation), file mask = ''
+. 2021-04-28 16:18:08.236 Local file 'h:\cfg\Switch\Woodburn-01\.' [2021-04-28T23:18:07.189Z] [0] excluded from synchronization
+. 2021-04-28 16:18:08.236 Local file 'h:\cfg\Switch\Woodburn-01\..' [2021-04-28T23:18:07.189Z] [0] excluded from synchronization
+. 2021-04-28 16:18:08.236 Local file 'h:\cfg\Switch\Woodburn-01\20210428 161802' [2021-04-28T23:18:04.688Z] [643] included to synchronization
+. 2021-04-28 16:18:08.236 Listing directory "/home/ubuntu/project/Switch/Woodburn/Woodburn-01".
+> 2021-04-28 16:18:08.236 Type: SSH_FXP_OPENDIR, Size: 57, Number: 1291
+< 2021-04-28 16:18:08.256 Type: SSH_FXP_STATUS, Size: 24, Number: 1028
+. 2021-04-28 16:18:08.256 Discarding reserved response
+< 2021-04-28 16:18:08.256 Type: SSH_FXP_HANDLE, Size: 13, Number: 1291
+> 2021-04-28 16:18:08.256 Type: SSH_FXP_READDIR, Size: 13, Number: 1548
+< 2021-04-28 16:18:08.277 Type: SSH_FXP_NAME, Size: 207, Number: 1548
+> 2021-04-28 16:18:08.277 Type: SSH_FXP_READDIR, Size: 13, Number: 1804
+< 2021-04-28 16:18:08.297 Type: SSH_FXP_STATUS, Size: 28, Number: 1804
+< 2021-04-28 16:18:08.297 Status code: 1
+> 2021-04-28 16:18:08.297 Type: SSH_FXP_CLOSE, Size: 13, Number: 2052
+. 2021-04-28 16:18:08.297 ..;d;0;2021-04-22T02:52:30.000Z;3;"ubuntu" [1000];"ubuntu" [1000];rwxrwxr-x;0
+. 2021-04-28 16:18:08.297 .;d;0;2021-04-28T23:17:47.000Z;3;"ubuntu" [1000];"ubuntu" [1000];rwxrwxr-x;0
+. 2021-04-28 16:18:08.297 Local file 'h:\cfg\Switch\Woodburn-01\20210428 161802' [2021-04-28T23:18:04.688Z] [643] is new
+< 2021-04-28 16:18:08.297 Script: Synchronizing...
+. 2021-04-28 16:18:08.297 Synchronizing local directory 'h:\cfg\Switch\Woodburn-01\' with remote directory '/home/ubuntu/project/Switch/Woodburn/Woodburn-01/', params = 0x2 (NoConfirmation)
+. 2021-04-28 16:18:08.297 Copying 1 files/directories to remote directory "/home/ubuntu/project/Switch/Woodburn/Woodburn-01/" - total size: 643
+. 2021-04-28 16:18:08.297   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: *.*
+. 2021-04-28 16:18:08.297   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2021-04-28 16:18:08.297   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2021-04-28 16:18:08.297 File: 'h:\cfg\Switch\Woodburn-01\20210428 161802' [2021-04-28T23:18:04.688Z] [643]
+< 2021-04-28 16:18:08.297 Script: Local 'h:\cfg\Switch\Woodburn-01' => Remote '/home/ubuntu/project/Switch/Woodburn/Woodburn-01'
+. 2021-04-28 16:18:08.301 Copying "h:\cfg\Switch\Woodburn-01\20210428 161802" to remote directory started.
+. 2021-04-28 16:18:08.301 Binary transfer mode selected.
+. 2021-04-28 16:18:08.301 Opening remote file.
+> 2021-04-28 16:18:08.301 Type: SSH_FXP_OPEN, Size: 89, Number: 2307
+< 2021-04-28 16:18:08.320 Type: SSH_FXP_STATUS, Size: 24, Number: 2052
+. 2021-04-28 16:18:08.320 Discarding reserved response
+< 2021-04-28 16:18:08.320 Type: SSH_FXP_HANDLE, Size: 13, Number: 2307
+> 2021-04-28 16:18:08.320 Type: SSH_FXP_WRITE, Size: 668, Number: 2822
+> 2021-04-28 16:18:08.321 Type: SSH_FXP_CLOSE, Size: 13, Number: 3076
+> 2021-04-28 16:18:08.321 Type: SSH_FXP_SETSTAT, Size: 85, Number: 2569
+< 2021-04-28 16:18:08.341 Type: SSH_FXP_STATUS, Size: 24, Number: 2822
+< 2021-04-28 16:18:08.341 Status code: 0
+< 2021-04-28 16:18:08.341 Type: SSH_FXP_STATUS, Size: 24, Number: 3076
+< 2021-04-28 16:18:08.341 Status code: 0
+. 2021-04-28 16:18:08.341 Preserving timestamp [2021-04-28T23:18:04.000Z]
+< 2021-04-28 16:18:08.361 Type: SSH_FXP_STATUS, Size: 24, Number: 2569
+< 2021-04-28 16:18:08.361 Status code: 0
+. 2021-04-28 16:18:08.361 Transfer done: 'h:\cfg\Switch\Woodburn-01\20210428 161802' => '/home/ubuntu/project/Switch/Woodburn/Woodburn-01/20210428 161802' [643]
+. 2021-04-28 16:18:08.361 Copying finished: Transferred: 643, Elapsed: 0:00:00, CPS: 0/s
+> 2021-04-28 16:18:08.362 Script: exit
+. 2021-04-28 16:18:08.362 Script: Exit code: 0
+. 2021-04-28 16:18:08.362 Closing connection.
+. 2021-04-28 16:18:08.362 Sending special code: 1
+. 2021-04-28 16:18:08.382 Session sent command exit status 0
+. 2021-04-28 16:18:08.382 Main session channel closed
+. 2021-04-28 16:18:08.382 All channels closed
+. 2021-04-28 16:19:35.241 --------------------------------------------------------------------------
+. 2021-04-28 16:19:35.241 WinSCP Version 5.17.10 (Build 11087) (OS 10.0.19042 - Windows 10 Enterprise)
+. 2021-04-28 16:19:35.241 Configuration: nul
+. 2021-04-28 16:19:35.241 Log level: Normal
+. 2021-04-28 16:19:35.241 Local account: DESKTOP-G7B6GOJ\Gallowloch
+. 2021-04-28 16:19:35.241 Working directory: H:\cfg
+. 2021-04-28 16:19:35.241 Process ID: 16804
+. 2021-04-28 16:19:35.241 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe" /console=5.17.10 /consoleinstance=_788_587 "/log=h:\cfg\back.log" "/ini=nul" "/script=h:\cfg\scpupload.txt" 
+. 2021-04-28 16:19:35.241 Time zone: Current: GMT-7, Standard: GMT-8 (Pacific Standard Time), DST: GMT-7 (Pacific Daylight Time), DST Start: 3/14/2021, DST End: 11/7/2021
+. 2021-04-28 16:19:35.241 Login time: Wednesday, April 28, 2021 4:19:35 PM
+. 2021-04-28 16:19:35.241 --------------------------------------------------------------------------
+. 2021-04-28 16:19:35.241 Script: Retrospectively logging previous script records:
+> 2021-04-28 16:19:35.241 Script: open sftp://ubuntu@ec2-54-202-170-244.us-west-2.compute.amazonaws.com/ -hostkey="ssh-ed25519 255 vJkgnYHHk5haUYR1BJ9xpIQdNvGOETdwenDPNekNcv8=" -privatekey="E:\College\Classwork\IS475\NetCon.ppk" -rawsettings Cipher="aes,chacha20,3des,WARN,des,blowfish,arcfour"
+. 2021-04-28 16:19:35.241 --------------------------------------------------------------------------
+. 2021-04-28 16:19:35.241 Session name: ubuntu@ec2-54-202-170-244.us-west-2.compute.amazonaws.com (Ad-Hoc site)
+. 2021-04-28 16:19:35.241 Host name: ec2-54-202-170-244.us-west-2.compute.amazonaws.com (Port: 22)
+. 2021-04-28 16:19:35.241 User name: ubuntu (Password: No, Key file: Yes, Passphrase: No)
+. 2021-04-28 16:19:35.241 Tunnel: No
+. 2021-04-28 16:19:35.241 Transfer Protocol: SFTP
+. 2021-04-28 16:19:35.241 Ping type: Off, Ping interval: 30 sec; Timeout: 15 sec
+. 2021-04-28 16:19:35.241 Disable Nagle: No
+. 2021-04-28 16:19:35.241 Proxy: None
+. 2021-04-28 16:19:35.241 Send buffer: 262144
+. 2021-04-28 16:19:35.241 SSH protocol version: 2; Compression: No
+. 2021-04-28 16:19:35.241 Bypass authentication: No
+. 2021-04-28 16:19:35.241 Try agent: Yes; Agent forwarding: No; TIS/CryptoCard: No; KI: Yes; GSSAPI: Yes
+. 2021-04-28 16:19:35.241 GSSAPI: Forwarding: No; Libs: gssapi32,sspi,custom; Custom: 
+. 2021-04-28 16:19:35.241 Ciphers: aes,chacha20,3des,WARN,des,blowfish,arcfour; Ssh2DES: No
+. 2021-04-28 16:19:35.241 KEX: ecdh,dh-gex-sha1,dh-group14-sha1,rsa,WARN,dh-group1-sha1
+. 2021-04-28 16:19:35.242 SSH Bugs: Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto
+. 2021-04-28 16:19:35.242 Simple channel: Yes
+. 2021-04-28 16:19:35.242 Return code variable: Autodetect; Lookup user groups: Auto
+. 2021-04-28 16:19:35.242 Shell: default
+. 2021-04-28 16:19:35.242 EOL: LF, UTF: Auto
+. 2021-04-28 16:19:35.242 Clear aliases: Yes, Unset nat.vars: Yes, Resolve symlinks: Yes; Follow directory symlinks: No
+. 2021-04-28 16:19:35.242 LS: ls -la, Ign LS warn: Yes, Scp1 Comp: No; Exit code 1 is error: No
+. 2021-04-28 16:19:35.242 SFTP Bugs: Auto,Auto
+. 2021-04-28 16:19:35.242 SFTP Server: default
+. 2021-04-28 16:19:35.242 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2021-04-28 16:19:35.242 Cache directory changes: Yes, Permanent: Yes
+. 2021-04-28 16:19:35.242 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2021-04-28 16:19:35.242 DST mode: Unix
+. 2021-04-28 16:19:35.242 --------------------------------------------------------------------------
+. 2021-04-28 16:19:35.242 Looking up host "ec2-54-202-170-244.us-west-2.compute.amazonaws.com" for SSH connection
+. 2021-04-28 16:19:35.246 Connecting to 54.202.170.244 port 22
+. 2021-04-28 16:19:35.268 We claim version: SSH-2.0-WinSCP_release_5.17.10
+. 2021-04-28 16:19:35.300 Remote version: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.2
+. 2021-04-28 16:19:35.300 Using SSH protocol version 2
+. 2021-04-28 16:19:35.300 Have a known host key of type ssh-ed25519
+. 2021-04-28 16:19:35.322 Doing ECDH key exchange with curve Curve25519 and hash SHA-256
+. 2021-04-28 16:19:35.395 Server also has ecdsa-sha2-nistp256/ssh-rsa host keys, but we don't know any of them
+. 2021-04-28 16:19:35.395 Host key fingerprint is:
+. 2021-04-28 16:19:35.395 ssh-ed25519 255 68:89:c8:da:e8:88:c2:cd:ea:ba:c9:12:bf:ff:e1:4b vJkgnYHHk5haUYR1BJ9xpIQdNvGOETdwenDPNekNcv8=
+. 2021-04-28 16:19:35.395 Host key matches configured key fingerprint
+. 2021-04-28 16:19:35.395 Initialised AES-256 SDCTR (AES-NI accelerated) outbound encryption
+. 2021-04-28 16:19:35.395 Initialised HMAC-SHA-256 outbound MAC algorithm
+. 2021-04-28 16:19:35.395 Initialised AES-256 SDCTR (AES-NI accelerated) inbound encryption
+. 2021-04-28 16:19:35.395 Initialised HMAC-SHA-256 inbound MAC algorithm
+. 2021-04-28 16:19:35.414 Reading key file "E:\College\Classwork\IS475\NetCon.ppk"
+! 2021-04-28 16:19:35.415 Using username "ubuntu".
+. 2021-04-28 16:19:35.448 Server offered these authentication methods: publickey
+. 2021-04-28 16:19:35.448 Offered public key
+. 2021-04-28 16:19:35.469 Offer of public key accepted
+! 2021-04-28 16:19:35.469 Authenticating with public key "imported-openssh-key"
+. 2021-04-28 16:19:35.572 Sent public key signature
+. 2021-04-28 16:19:35.603 Access granted
+. 2021-04-28 16:19:35.603 Opening main session channel
+. 2021-04-28 16:19:36.025 Remote debug message: /home/ubuntu/.ssh/authorized_keys:1: key options: agent-forwarding port-forwarding pty user-rc x11-forwarding
+. 2021-04-28 16:19:36.099 Remote debug message: /home/ubuntu/.ssh/authorized_keys:1: key options: agent-forwarding port-forwarding pty user-rc x11-forwarding
+. 2021-04-28 16:19:36.099 Opened main channel
+. 2021-04-28 16:19:36.120 Started a shell/command
+. 2021-04-28 16:19:36.120 --------------------------------------------------------------------------
+. 2021-04-28 16:19:36.120 Using SFTP protocol.
+. 2021-04-28 16:19:36.120 Doing startup conversation with host.
+> 2021-04-28 16:19:36.120 Type: SSH_FXP_INIT, Size: 5, Number: -1
+< 2021-04-28 16:19:36.143 Type: SSH_FXP_VERSION, Size: 179, Number: -1
+. 2021-04-28 16:19:36.143 SFTP version 3 negotiated.
+. 2021-04-28 16:19:36.143 Unknown server extension posix-rename@openssh.com="1"
+. 2021-04-28 16:19:36.143 Supports statvfs@openssh.com extension version "2"
+. 2021-04-28 16:19:36.143 Unknown server extension fstatvfs@openssh.com="2"
+. 2021-04-28 16:19:36.143 Supports hardlink@openssh.com extension version "1"
+. 2021-04-28 16:19:36.143 Unknown server extension fsync@openssh.com="1"
+. 2021-04-28 16:19:36.143 Unknown server extension lsetstat@openssh.com="1"
+. 2021-04-28 16:19:36.143 We believe the server has signed timestamps bug
+. 2021-04-28 16:19:36.143 We will use UTF-8 strings until server sends an invalid UTF-8 string as with SFTP version 3 and older UTF-8 strings are not mandatory
+. 2021-04-28 16:19:36.143 Limiting packet size to OpenSSH sftp-server limit of 262148 bytes
+. 2021-04-28 16:19:36.143 Getting current directory name.
+. 2021-04-28 16:19:36.143 Getting real path for '.'
+> 2021-04-28 16:19:36.143 Type: SSH_FXP_REALPATH, Size: 10, Number: 16
+< 2021-04-28 16:19:36.164 Type: SSH_FXP_NAME, Size: 45, Number: 16
+. 2021-04-28 16:19:36.164 Real path is '/home/ubuntu'
+. 2021-04-28 16:19:36.164 Startup conversation with host finished.
+< 2021-04-28 16:19:36.164 Script: Active session: [1] ubuntu@ec2-54-202-170-244.us-west-2.compute.amazonaws.com
+> 2021-04-28 16:19:36.165 Script: synchronize remote h:\cfg\Switch /home/ubuntu/project/Switch/Woodburn
+< 2021-04-28 16:19:36.165 Script: Comparing...
+. 2021-04-28 16:19:36.165 Collecting synchronization list for local directory 'h:\cfg\Switch' and remote directory '/home/ubuntu/project/Switch/Woodburn', mode = Remote, params = 0x2 (NoConfirmation), file mask = ''
+. 2021-04-28 16:19:36.165 Local file 'h:\cfg\Switch\.' [2021-04-22T02:27:04.018Z] [0] excluded from synchronization
+. 2021-04-28 16:19:36.165 Local file 'h:\cfg\Switch\..' [2021-04-22T02:27:04.018Z] [0] excluded from synchronization
+. 2021-04-28 16:19:36.165 Local file 'h:\cfg\Switch\Woodburn-01' [2021-04-28T23:19:35.162Z] [0] included to synchronization
+. 2021-04-28 16:19:36.165 Listing directory "/home/ubuntu/project/Switch/Woodburn".
+> 2021-04-28 16:19:36.165 Type: SSH_FXP_OPENDIR, Size: 45, Number: 267
+< 2021-04-28 16:19:36.185 Type: SSH_FXP_HANDLE, Size: 13, Number: 267
+> 2021-04-28 16:19:36.185 Type: SSH_FXP_READDIR, Size: 13, Number: 524
+< 2021-04-28 16:19:36.205 Type: SSH_FXP_NAME, Size: 325, Number: 524
+> 2021-04-28 16:19:36.205 Type: SSH_FXP_READDIR, Size: 13, Number: 780
+< 2021-04-28 16:19:36.225 Type: SSH_FXP_STATUS, Size: 28, Number: 780
+< 2021-04-28 16:19:36.225 Status code: 1
+> 2021-04-28 16:19:36.225 Type: SSH_FXP_CLOSE, Size: 13, Number: 1028
+. 2021-04-28 16:19:36.225 ..;d;0;2021-04-22T02:51:24.000Z;3;"ubuntu" [1000];"ubuntu" [1000];rwxrwxr-x;0
+. 2021-04-28 16:19:36.225 Woodburn-01;d;0;2021-04-28T23:18:08.000Z;3;"ubuntu" [1000];"ubuntu" [1000];rwxrwxr-x;0
+. 2021-04-28 16:19:36.225 .;d;0;2021-04-22T02:52:30.000Z;3;"ubuntu" [1000];"ubuntu" [1000];rwxrwxr-x;0
+. 2021-04-28 16:19:36.242 Collecting synchronization list for local directory 'h:\cfg\Switch\Woodburn-01' and remote directory '/home/ubuntu/project/Switch/Woodburn/Woodburn-01', mode = Remote, params = 0x2 (NoConfirmation), file mask = ''
+. 2021-04-28 16:19:36.243 Local file 'h:\cfg\Switch\Woodburn-01\.' [2021-04-28T23:19:35.162Z] [0] excluded from synchronization
+. 2021-04-28 16:19:36.243 Local file 'h:\cfg\Switch\Woodburn-01\..' [2021-04-28T23:19:35.162Z] [0] excluded from synchronization
+. 2021-04-28 16:19:36.243 Local file 'h:\cfg\Switch\Woodburn-01\20210428 161802' [2021-04-28T23:18:04.688Z] [643] included to synchronization
+. 2021-04-28 16:19:36.243 Local file 'h:\cfg\Switch\Woodburn-01\20210428 161930.txt' [2021-04-28T23:19:32.885Z] [643] included to synchronization
+. 2021-04-28 16:19:36.243 Listing directory "/home/ubuntu/project/Switch/Woodburn/Woodburn-01".
+> 2021-04-28 16:19:36.243 Type: SSH_FXP_OPENDIR, Size: 57, Number: 1291
+< 2021-04-28 16:19:36.274 Type: SSH_FXP_STATUS, Size: 24, Number: 1028
+. 2021-04-28 16:19:36.274 Discarding reserved response
+< 2021-04-28 16:19:36.274 Type: SSH_FXP_HANDLE, Size: 13, Number: 1291
+> 2021-04-28 16:19:36.274 Type: SSH_FXP_READDIR, Size: 13, Number: 1548
+< 2021-04-28 16:19:36.300 Type: SSH_FXP_NAME, Size: 333, Number: 1548
+> 2021-04-28 16:19:36.300 Type: SSH_FXP_READDIR, Size: 13, Number: 1804
+< 2021-04-28 16:19:36.319 Type: SSH_FXP_STATUS, Size: 28, Number: 1804
+< 2021-04-28 16:19:36.319 Status code: 1
+> 2021-04-28 16:19:36.319 Type: SSH_FXP_CLOSE, Size: 13, Number: 2052
+. 2021-04-28 16:19:36.319 ..;d;0;2021-04-22T02:52:30.000Z;3;"ubuntu" [1000];"ubuntu" [1000];rwxrwxr-x;0
+. 2021-04-28 16:19:36.319 20210428 161802;-;643;2021-04-28T23:18:04.000Z;3;"ubuntu" [1000];"ubuntu" [1000];rw-rw-r--;0
+. 2021-04-28 16:19:36.319 .;d;0;2021-04-28T23:18:08.000Z;3;"ubuntu" [1000];"ubuntu" [1000];rwxrwxr-x;0
+. 2021-04-28 16:19:36.320 Local file 'h:\cfg\Switch\Woodburn-01\20210428 161930.txt' [2021-04-28T23:19:32.885Z] [643] is new
+< 2021-04-28 16:19:36.320 Script: Synchronizing...
+. 2021-04-28 16:19:36.321 Synchronizing local directory 'h:\cfg\Switch\Woodburn-01\' with remote directory '/home/ubuntu/project/Switch/Woodburn/Woodburn-01/', params = 0x2 (NoConfirmation)
+. 2021-04-28 16:19:36.321 Copying 1 files/directories to remote directory "/home/ubuntu/project/Switch/Woodburn/Woodburn-01/" - total size: 643
+. 2021-04-28 16:19:36.321   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: *.*
+. 2021-04-28 16:19:36.321   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2021-04-28 16:19:36.321   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2021-04-28 16:19:36.321 File: 'h:\cfg\Switch\Woodburn-01\20210428 161930.txt' [2021-04-28T23:19:32.885Z] [643]
+< 2021-04-28 16:19:36.321 Script: Local 'h:\cfg\Switch\Woodburn-01' => Remote '/home/ubuntu/project/Switch/Woodburn/Woodburn-01'
+. 2021-04-28 16:19:36.324 Copying "h:\cfg\Switch\Woodburn-01\20210428 161930.txt" to remote directory started.
+. 2021-04-28 16:19:36.324 Binary transfer mode selected.
+. 2021-04-28 16:19:36.324 Opening remote file.
+> 2021-04-28 16:19:36.324 Type: SSH_FXP_OPEN, Size: 93, Number: 2307
+< 2021-04-28 16:19:36.343 Type: SSH_FXP_STATUS, Size: 24, Number: 2052
+. 2021-04-28 16:19:36.343 Discarding reserved response
+< 2021-04-28 16:19:36.343 Type: SSH_FXP_HANDLE, Size: 13, Number: 2307
+> 2021-04-28 16:19:36.343 Type: SSH_FXP_WRITE, Size: 668, Number: 2822
+> 2021-04-28 16:19:36.343 Type: SSH_FXP_CLOSE, Size: 13, Number: 3076
+> 2021-04-28 16:19:36.343 Type: SSH_FXP_SETSTAT, Size: 89, Number: 2569
+< 2021-04-28 16:19:36.364 Type: SSH_FXP_STATUS, Size: 24, Number: 2822
+< 2021-04-28 16:19:36.364 Status code: 0
+< 2021-04-28 16:19:36.364 Type: SSH_FXP_STATUS, Size: 24, Number: 3076
+< 2021-04-28 16:19:36.364 Status code: 0
+. 2021-04-28 16:19:36.364 Preserving timestamp [2021-04-28T23:19:32.000Z]
+< 2021-04-28 16:19:36.382 Type: SSH_FXP_STATUS, Size: 24, Number: 2569
+< 2021-04-28 16:19:36.382 Status code: 0
+. 2021-04-28 16:19:36.382 Transfer done: 'h:\cfg\Switch\Woodburn-01\20210428 161930.txt' => '/home/ubuntu/project/Switch/Woodburn/Woodburn-01/20210428 161930.txt' [643]
+. 2021-04-28 16:19:36.382 Copying finished: Transferred: 643, Elapsed: 0:00:00, CPS: 0/s
+> 2021-04-28 16:19:36.383 Script: exit
+. 2021-04-28 16:19:36.383 Script: Exit code: 0
+. 2021-04-28 16:19:36.383 Closing connection.
+. 2021-04-28 16:19:36.383 Sending special code: 1
+. 2021-04-28 16:19:36.403 Session sent command exit status 0
+. 2021-04-28 16:19:36.403 Main session channel closed
+. 2021-04-28 16:19:36.403 All channels closed
+. 2021-06-02 12:28:01.448 --------------------------------------------------------------------------
+. 2021-06-02 12:28:01.448 WinSCP Version 5.17.10 (Build 11087) (OS 10.0.19042 - Windows 10 Enterprise)
+. 2021-06-02 12:28:01.448 Configuration: nul
+. 2021-06-02 12:28:01.448 Log level: Normal
+. 2021-06-02 12:28:01.448 Local account: DESKTOP-G7B6GOJ\Gallowloch
+. 2021-06-02 12:28:01.448 Working directory: H:\cfg
+. 2021-06-02 12:28:01.448 Process ID: 976
+. 2021-06-02 12:28:01.448 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe" /console=5.17.10 /consoleinstance=_13676_834 "/log=h:\cfg\back.log" "/ini=nul" "/script=h:\cfg\scpupload.txt" 
+. 2021-06-02 12:28:01.448 Time zone: Current: GMT-7, Standard: GMT-8 (Pacific Standard Time), DST: GMT-7 (Pacific Daylight Time), DST Start: 3/14/2021, DST End: 11/7/2021
+. 2021-06-02 12:28:01.448 Login time: Wednesday, June 2, 2021 12:28:01 PM
+. 2021-06-02 12:28:01.448 --------------------------------------------------------------------------
+. 2021-06-02 12:28:01.448 Script: Retrospectively logging previous script records:
+> 2021-06-02 12:28:01.448 Script: open sftp://ubuntu@ec2-54-202-170-244.us-west-2.compute.amazonaws.com/ -hostkey="ssh-ed25519 255 vJkgnYHHk5haUYR1BJ9xpIQdNvGOETdwenDPNekNcv8=" -privatekey="E:\College\Classwork\IS475\NetCon.ppk" -rawsettings Cipher="aes,chacha20,3des,WARN,des,blowfish,arcfour"
+. 2021-06-02 12:28:01.448 --------------------------------------------------------------------------
+. 2021-06-02 12:28:01.448 Session name: ubuntu@ec2-54-202-170-244.us-west-2.compute.amazonaws.com (Ad-Hoc site)
+. 2021-06-02 12:28:01.448 Host name: ec2-54-202-170-244.us-west-2.compute.amazonaws.com (Port: 22)
+. 2021-06-02 12:28:01.448 User name: ubuntu (Password: No, Key file: Yes, Passphrase: No)
+. 2021-06-02 12:28:01.448 Tunnel: No
+. 2021-06-02 12:28:01.448 Transfer Protocol: SFTP
+. 2021-06-02 12:28:01.448 Ping type: Off, Ping interval: 30 sec; Timeout: 15 sec
+. 2021-06-02 12:28:01.448 Disable Nagle: No
+. 2021-06-02 12:28:01.448 Proxy: None
+. 2021-06-02 12:28:01.448 Send buffer: 262144
+. 2021-06-02 12:28:01.448 SSH protocol version: 2; Compression: No
+. 2021-06-02 12:28:01.448 Bypass authentication: No
+. 2021-06-02 12:28:01.448 Try agent: Yes; Agent forwarding: No; TIS/CryptoCard: No; KI: Yes; GSSAPI: Yes
+. 2021-06-02 12:28:01.448 GSSAPI: Forwarding: No; Libs: gssapi32,sspi,custom; Custom: 
+. 2021-06-02 12:28:01.448 Ciphers: aes,chacha20,3des,WARN,des,blowfish,arcfour; Ssh2DES: No
+. 2021-06-02 12:28:01.448 KEX: ecdh,dh-gex-sha1,dh-group14-sha1,rsa,WARN,dh-group1-sha1
+. 2021-06-02 12:28:01.448 SSH Bugs: Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto
+. 2021-06-02 12:28:01.448 Simple channel: Yes
+. 2021-06-02 12:28:01.448 Return code variable: Autodetect; Lookup user groups: Auto
+. 2021-06-02 12:28:01.448 Shell: default
+. 2021-06-02 12:28:01.448 EOL: LF, UTF: Auto
+. 2021-06-02 12:28:01.448 Clear aliases: Yes, Unset nat.vars: Yes, Resolve symlinks: Yes; Follow directory symlinks: No
+. 2021-06-02 12:28:01.448 LS: ls -la, Ign LS warn: Yes, Scp1 Comp: No; Exit code 1 is error: No
+. 2021-06-02 12:28:01.448 SFTP Bugs: Auto,Auto
+. 2021-06-02 12:28:01.448 SFTP Server: default
+. 2021-06-02 12:28:01.448 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2021-06-02 12:28:01.448 Cache directory changes: Yes, Permanent: Yes
+. 2021-06-02 12:28:01.448 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2021-06-02 12:28:01.448 DST mode: Unix
+. 2021-06-02 12:28:01.448 --------------------------------------------------------------------------
+. 2021-06-02 12:28:01.449 Looking up host "ec2-54-202-170-244.us-west-2.compute.amazonaws.com" for SSH connection
+. 2021-06-02 12:28:01.453 Connecting to 54.202.170.244 port 22
+. 2021-06-02 12:28:01.492 We claim version: SSH-2.0-WinSCP_release_5.17.10
+. 2021-06-02 12:28:01.544 Remote version: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.2
+. 2021-06-02 12:28:01.544 Using SSH protocol version 2
+. 2021-06-02 12:28:01.544 Have a known host key of type ssh-ed25519
+. 2021-06-02 12:28:01.566 Doing ECDH key exchange with curve Curve25519 and hash SHA-256
+. 2021-06-02 12:28:01.639 Server also has ecdsa-sha2-nistp256/ssh-rsa host keys, but we don't know any of them
+. 2021-06-02 12:28:01.639 Host key fingerprint is:
+. 2021-06-02 12:28:01.639 ssh-ed25519 255 68:89:c8:da:e8:88:c2:cd:ea:ba:c9:12:bf:ff:e1:4b vJkgnYHHk5haUYR1BJ9xpIQdNvGOETdwenDPNekNcv8=
+. 2021-06-02 12:28:01.640 Host key matches configured key fingerprint
+. 2021-06-02 12:28:01.640 Initialised AES-256 SDCTR (AES-NI accelerated) outbound encryption
+. 2021-06-02 12:28:01.640 Initialised HMAC-SHA-256 outbound MAC algorithm
+. 2021-06-02 12:28:01.640 Initialised AES-256 SDCTR (AES-NI accelerated) inbound encryption
+. 2021-06-02 12:28:01.640 Initialised HMAC-SHA-256 inbound MAC algorithm
+. 2021-06-02 12:28:01.660 Reading key file "E:\College\Classwork\IS475\NetCon.ppk"
+! 2021-06-02 12:28:01.660 Using username "ubuntu".
+. 2021-06-02 12:28:01.692 Server offered these authentication methods: publickey
+. 2021-06-02 12:28:01.692 Offered public key
+. 2021-06-02 12:28:01.712 Offer of public key accepted
+! 2021-06-02 12:28:01.712 Authenticating with public key "imported-openssh-key"
+. 2021-06-02 12:28:01.816 Sent public key signature
+. 2021-06-02 12:28:01.845 Access granted
+. 2021-06-02 12:28:01.845 Opening main session channel
+. 2021-06-02 12:28:02.279 Remote debug message: /home/ubuntu/.ssh/authorized_keys:1: key options: agent-forwarding port-forwarding pty user-rc x11-forwarding
+. 2021-06-02 12:28:02.345 Remote debug message: /home/ubuntu/.ssh/authorized_keys:1: key options: agent-forwarding port-forwarding pty user-rc x11-forwarding
+. 2021-06-02 12:28:02.345 Opened main channel
+. 2021-06-02 12:28:02.365 Started a shell/command
+. 2021-06-02 12:28:02.365 --------------------------------------------------------------------------
+. 2021-06-02 12:28:02.365 Using SFTP protocol.
+. 2021-06-02 12:28:02.365 Doing startup conversation with host.
+> 2021-06-02 12:28:02.366 Type: SSH_FXP_INIT, Size: 5, Number: -1
+< 2021-06-02 12:28:02.386 Type: SSH_FXP_VERSION, Size: 179, Number: -1
+. 2021-06-02 12:28:02.386 SFTP version 3 negotiated.
+. 2021-06-02 12:28:02.386 Unknown server extension posix-rename@openssh.com="1"
+. 2021-06-02 12:28:02.386 Supports statvfs@openssh.com extension version "2"
+. 2021-06-02 12:28:02.386 Unknown server extension fstatvfs@openssh.com="2"
+. 2021-06-02 12:28:02.386 Supports hardlink@openssh.com extension version "1"
+. 2021-06-02 12:28:02.386 Unknown server extension fsync@openssh.com="1"
+. 2021-06-02 12:28:02.386 Unknown server extension lsetstat@openssh.com="1"
+. 2021-06-02 12:28:02.386 We believe the server has signed timestamps bug
+. 2021-06-02 12:28:02.386 We will use UTF-8 strings until server sends an invalid UTF-8 string as with SFTP version 3 and older UTF-8 strings are not mandatory
+. 2021-06-02 12:28:02.386 Limiting packet size to OpenSSH sftp-server limit of 262148 bytes
+. 2021-06-02 12:28:02.386 Getting current directory name.
+. 2021-06-02 12:28:02.386 Getting real path for '.'
+> 2021-06-02 12:28:02.386 Type: SSH_FXP_REALPATH, Size: 10, Number: 16
+< 2021-06-02 12:28:02.415 Type: SSH_FXP_NAME, Size: 45, Number: 16
+. 2021-06-02 12:28:02.415 Real path is '/home/ubuntu'
+. 2021-06-02 12:28:02.415 Startup conversation with host finished.
+< 2021-06-02 12:28:02.416 Script: Active session: [1] ubuntu@ec2-54-202-170-244.us-west-2.compute.amazonaws.com
+> 2021-06-02 12:28:02.416 Script: synchronize remote h:\cfg\Switch /home/ubuntu/project/Switch/Woodburn
+< 2021-06-02 12:28:02.416 Script: Comparing...
+. 2021-06-02 12:28:02.416 Collecting synchronization list for local directory 'h:\cfg\Switch' and remote directory '/home/ubuntu/project/Switch/Woodburn', mode = Remote, params = 0x2 (NoConfirmation), file mask = ''
+. 2021-06-02 12:28:02.417 Local file 'h:\cfg\Switch\.' [2021-04-22T02:27:04.018Z] [0] excluded from synchronization
+. 2021-06-02 12:28:02.417 Local file 'h:\cfg\Switch\..' [2021-04-22T02:27:04.018Z] [0] excluded from synchronization
+. 2021-06-02 12:28:02.417 Local file 'h:\cfg\Switch\Woodburn-01' [2021-06-02T19:28:01.248Z] [0] included to synchronization
+. 2021-06-02 12:28:02.417 Listing directory "/home/ubuntu/project/Switch/Woodburn".
+> 2021-06-02 12:28:02.417 Type: SSH_FXP_OPENDIR, Size: 45, Number: 267
+< 2021-06-02 12:28:02.437 Type: SSH_FXP_HANDLE, Size: 13, Number: 267
+> 2021-06-02 12:28:02.437 Type: SSH_FXP_READDIR, Size: 13, Number: 524
+< 2021-06-02 12:28:02.456 Type: SSH_FXP_NAME, Size: 325, Number: 524
+> 2021-06-02 12:28:02.456 Type: SSH_FXP_READDIR, Size: 13, Number: 780
+< 2021-06-02 12:28:02.475 Type: SSH_FXP_STATUS, Size: 28, Number: 780
+< 2021-06-02 12:28:02.475 Status code: 1
+> 2021-06-02 12:28:02.475 Type: SSH_FXP_CLOSE, Size: 13, Number: 1028
+. 2021-06-02 12:28:02.475 ..;d;0;2021-05-27T18:04:48.000Z;3;"ubuntu" [1000];"www-data" [33];rwxrwxr-x;0
+. 2021-06-02 12:28:02.475 Woodburn-01;d;0;2021-05-22T01:05:31.000Z;3;"ubuntu" [1000];"www-data" [33];rwxrwxr-x;0
+. 2021-06-02 12:28:02.475 .;d;0;2021-05-13T18:57:17.000Z;3;"ubuntu" [1000];"www-data" [33];rwxrwxr-x;0
+. 2021-06-02 12:28:02.489 Collecting synchronization list for local directory 'h:\cfg\Switch\Woodburn-01' and remote directory '/home/ubuntu/project/Switch/Woodburn/Woodburn-01', mode = Remote, params = 0x2 (NoConfirmation), file mask = ''
+. 2021-06-02 12:28:02.490 Local file 'h:\cfg\Switch\Woodburn-01\.' [2021-06-02T19:28:01.248Z] [0] excluded from synchronization
+. 2021-06-02 12:28:02.490 Local file 'h:\cfg\Switch\Woodburn-01\..' [2021-06-02T19:28:01.248Z] [0] excluded from synchronization
+. 2021-06-02 12:28:02.490 Local file 'h:\cfg\Switch\Woodburn-01\20210428161802' [2021-04-28T23:18:04.688Z] [643] included to synchronization
+. 2021-06-02 12:28:02.490 Local file 'h:\cfg\Switch\Woodburn-01\20210602122756' [2021-06-02T19:27:58.100Z] [643] included to synchronization
+. 2021-06-02 12:28:02.490 Listing directory "/home/ubuntu/project/Switch/Woodburn/Woodburn-01".
+> 2021-06-02 12:28:02.490 Type: SSH_FXP_OPENDIR, Size: 57, Number: 1291
+< 2021-06-02 12:28:02.509 Type: SSH_FXP_STATUS, Size: 24, Number: 1028
+. 2021-06-02 12:28:02.509 Discarding reserved response
+< 2021-06-02 12:28:02.509 Type: SSH_FXP_HANDLE, Size: 13, Number: 1291
+> 2021-06-02 12:28:02.509 Type: SSH_FXP_READDIR, Size: 13, Number: 1548
+< 2021-06-02 12:28:02.528 Type: SSH_FXP_NAME, Size: 331, Number: 1548
+> 2021-06-02 12:28:02.528 Type: SSH_FXP_READDIR, Size: 13, Number: 1804
+< 2021-06-02 12:28:02.549 Type: SSH_FXP_STATUS, Size: 28, Number: 1804
+< 2021-06-02 12:28:02.549 Status code: 1
+> 2021-06-02 12:28:02.549 Type: SSH_FXP_CLOSE, Size: 13, Number: 2052
+. 2021-06-02 12:28:02.549 ..;d;0;2021-05-13T18:57:17.000Z;3;"ubuntu" [1000];"www-data" [33];rwxrwxr-x;0
+. 2021-06-02 12:28:02.549 20210428161802;-;643;2021-04-28T23:18:04.000Z;3;"ubuntu" [1000];"www-data" [33];rw-rw-r--;0
+. 2021-06-02 12:28:02.549 .;d;0;2021-05-22T01:05:31.000Z;3;"ubuntu" [1000];"www-data" [33];rwxrwxr-x;0
+. 2021-06-02 12:28:02.550 Local file 'h:\cfg\Switch\Woodburn-01\20210602122756' [2021-06-02T19:27:58.100Z] [643] is new
+< 2021-06-02 12:28:02.550 Script: Synchronizing...
+. 2021-06-02 12:28:02.551 Synchronizing local directory 'h:\cfg\Switch\Woodburn-01\' with remote directory '/home/ubuntu/project/Switch/Woodburn/Woodburn-01/', params = 0x2 (NoConfirmation)
+. 2021-06-02 12:28:02.553 Copying 1 files/directories to remote directory "/home/ubuntu/project/Switch/Woodburn/Woodburn-01/" - total size: 643
+. 2021-06-02 12:28:02.553   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: *.*
+. 2021-06-02 12:28:02.553   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2021-06-02 12:28:02.553   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2021-06-02 12:28:02.553 File: 'h:\cfg\Switch\Woodburn-01\20210602122756' [2021-06-02T19:27:58.100Z] [643]
+< 2021-06-02 12:28:02.553 Script: Local 'h:\cfg\Switch\Woodburn-01' => Remote '/home/ubuntu/project/Switch/Woodburn/Woodburn-01'
+. 2021-06-02 12:28:02.554 Copying "h:\cfg\Switch\Woodburn-01\20210602122756" to remote directory started.
+. 2021-06-02 12:28:02.554 Binary transfer mode selected.
+. 2021-06-02 12:28:02.554 Opening remote file.
+> 2021-06-02 12:28:02.554 Type: SSH_FXP_OPEN, Size: 88, Number: 2307
+< 2021-06-02 12:28:02.573 Type: SSH_FXP_STATUS, Size: 24, Number: 2052
+. 2021-06-02 12:28:02.573 Discarding reserved response
+< 2021-06-02 12:28:02.574 Type: SSH_FXP_HANDLE, Size: 13, Number: 2307
+> 2021-06-02 12:28:02.574 Type: SSH_FXP_WRITE, Size: 668, Number: 2822
+> 2021-06-02 12:28:02.576 Type: SSH_FXP_CLOSE, Size: 13, Number: 3076
+> 2021-06-02 12:28:02.576 Type: SSH_FXP_SETSTAT, Size: 84, Number: 2569
+< 2021-06-02 12:28:02.600 Type: SSH_FXP_STATUS, Size: 24, Number: 2822
+< 2021-06-02 12:28:02.600 Status code: 0
+< 2021-06-02 12:28:02.600 Type: SSH_FXP_STATUS, Size: 24, Number: 3076
+< 2021-06-02 12:28:02.600 Status code: 0
+. 2021-06-02 12:28:02.600 Preserving timestamp [2021-06-02T19:27:58.000Z]
+< 2021-06-02 12:28:02.619 Type: SSH_FXP_STATUS, Size: 24, Number: 2569
+< 2021-06-02 12:28:02.619 Status code: 0
+. 2021-06-02 12:28:02.619 Transfer done: 'h:\cfg\Switch\Woodburn-01\20210602122756' => '/home/ubuntu/project/Switch/Woodburn/Woodburn-01/20210602122756' [643]
+. 2021-06-02 12:28:02.619 Copying finished: Transferred: 643, Elapsed: 0:00:00, CPS: 0/s
+> 2021-06-02 12:28:02.619 Script: exit
+. 2021-06-02 12:28:02.619 Script: Exit code: 0
+. 2021-06-02 12:28:02.619 Closing connection.
+. 2021-06-02 12:28:02.619 Sending special code: 1
+. 2021-06-02 12:28:02.641 Session sent command exit status 0
+. 2021-06-02 12:28:02.641 Main session channel closed
+. 2021-06-02 12:28:02.641 All channels closed

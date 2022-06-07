@@ -1,0 +1,8 @@
+open sftp://ubuntu@ec2-54-202-170-244.us-west-2.compute.amazonaws.com/ -hostkey="ssh-ed25519 255 vJkgnYHHk5haUYR1BJ9xpIQdNvGOETdwenDPNekNcv8=" -privatekey="E:\College\Classwork\IS475\NetCon.ppk" -rawsettings Cipher="aes,chacha20,3des,WARN,des,blowfish,arcfour"
+
+synchronize remote h:\cfg\Switch /home/ubuntu/project/Switch/Woodburn
+
+exit
+
+# Execute the script using a command like:
+# "C:\Program Files (x86)\WinSCP\WinSCP.exe" /log="C:\writable\path\to\log\WinSCP.log" /ini=nul /script="C:\path\to\script\script.txt"

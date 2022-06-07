@@ -1,0 +1,30 @@
+; J9022A Configuration Editor; Created on release #N.11.25
+
+hostname "Woodburn-01-2810" 
+snmp-server contact "Alex Decknadel" 
+snmp-server location "Woodburn Site" 
+time timezone -480 
+ip default-gateway 192.168.0.1 
+sntp server 172.16.0.129 
+sntp server 192.168.0.1 
+timesync sntp 
+sntp unicast 
+snmp-server community "public" Unrestricted 
+vlan 1 
+   name "DEFAULT_VLAN" 
+   untagged 1-10,12-24,26-48 
+   ip address 192.168.0.250 255.255.255.0 
+   no untagged 11,25 
+   exit 
+vlan 18 
+   name "Employee" 
+   tagged 2,11,25,37,45,48 
+   exit 
+no stack 
+spanning-tree
+ip ssh
+ip ssh filetransfer
+no tftp client
+no tftp server
+password manager
+

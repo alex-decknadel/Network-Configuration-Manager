@@ -1,0 +1,1 @@
+pscp -v -pw Welcome123 admin@Woodburn-01:/cfg/running-config h:\cfg\Switch\Woodburn-01\running.txt
